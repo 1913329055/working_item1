@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/currency.css">
+    <link rel="stylesheet" href="./css/index1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><i>Tencent Texsmart</i></a>
+            </div>
+            <div class="top-menu">
+                <ul>
+                    <li class="product">文本理解</li>
+                    <li><a href="file:///C:/Users/10638/Desktop/work/nlp/introduce.html">产品介绍</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mian">
+            <div class="mian-body">
+                <div class="mian-title">腾讯文本理解服务</div>
+                <div class="search-box">
+                    <div class="text-box">
+                        <div class="search-left">
+                            <input class="search-text" name="navname" placeholder="请输入要解析的文本" value="上个月30号，南昌王先生在自己家里边看流浪地球边吃煲仔饭">
+                            <div class="box1">
+                                <div class="dropdown sel">
+                                    <div class="dropdown-centent">
+                                        <div class="input_select">中文</div>
+                                        <span><img src="./images/xia.png"></span>
+                                    </div>
+                                    <ul class="language">
+                                        <li><a href="###" rel="2">中文</a></li>
+                                        <li><a href="###" rel="3">英文</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <span><img src="./images/编组 3.png"></span>
+                    </div>
+                    <button class="search-btn" style="background-color: #0052D9;">开始解析</button>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="end">
+                <span class="Txlogo"><i>Tencent腾讯</i></span>
+                <span style="margin: 0 24px;">|</span>
+                <span class="Ten">Tencent Ai Lar</span>
+                <p style="height: 22px;"></p>
+                <span class="cop">Copyright © 1998 - 2018 Tencent. All Rights Reserved.</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./js/jquery-3.4.1.js"></script>
+<script>
+    $(function(){
+        $(".sel .dropdown-centent").on("click",function(){
+            $(this).siblings('.language').slideToggle();
+            $(".sel .dropdown-centent span img").toggleClass("shop");
+        })
+        $(".sel ul li a").click(function () {
+            var txt = $(this).html();
+            $(".sel .input_select").html(txt);
+            $(".sel ul").hide();
+            $(".result").html("您选择了" + txt + "，值为：");
+        });
+    })
+    $(function(){
+        $(document).bind("click", function (e) {
+            if($(e.target).closest(".input_select").length>0){
+                }else{        
+            $(".language").hide();
+            $(".dropdown-centent span img").removeClass('shop');   
+            }
+        });    
+    });
+    // $(function(){
+    //     $(".search-btn").click(function(){
+    //         if(".search-text".value == ""){
+    //             // location.href = "index-analysis2.html";
+    //             alert(456);
+    //         }else{
+    //             alert(132);
+    //         }
+    //     })
+    // })
+</script>

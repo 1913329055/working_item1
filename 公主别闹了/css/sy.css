@@ -1,0 +1,133 @@
+.main{
+    margin: -60px 0 0;
+}
+.information-main-fl li img{
+    height: 238px;
+}
+.content{
+    position: relative;
+}
+.information-box{
+    position: absolute;
+    top: 255px;
+    left: 0;
+}
+.qiandao{
+    position: absolute;
+    top: 823px;
+    left: 1107px;
+    width: 136px;
+    height: 142px;
+    background: url('../img/qian-dao.png') no-repeat;
+    z-index: 3;
+}
+
+/* xz */
+.xz{
+    position: relative;
+    z-index: 2;
+    width: 345px;
+    height: 225px;
+    background: url("../img/xz-sm.png") no-repeat;
+    margin-top: 290px;
+}
+.app{
+    position: absolute;
+    top: 39px;
+    left: 137px;
+    width: 195px;
+    height: 60px;
+    background-color: #121212;
+    cursor:pointer;
+    border-radius: 5px;
+    border: 1px solid #999;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+.an{
+    position: absolute;
+    top: 105px;
+    left: 137px;
+    width: 195px;
+    height: 60px;
+    background-color: #fdb205;
+    cursor:pointer;
+    border-radius: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    
+}
+.app:hover{
+   background-color: #393939; 
+}
+.an:hover{
+    background-color:#e49100; 
+}
+.xz input[placeholder]{
+    margin-top: 175px;
+    margin-left: 10px;
+    width: 255px;
+    height: 31px;
+    float: left;
+    border-radius: 2px;    
+}
+.send{
+    position: absolute;
+    top: 175px;
+    left: 265px;
+    width: 65px;
+    height: 31px;  
+    cursor:pointer;
+    color: #fff;
+    line-height: 31px;
+    text-align: center;
+    background-color: #fdb205;
+    border-radius: 2px;    
+}
+.send:hover{
+    background-color:#e49100;       
+}
+.xz-er{
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    left: 11px;
+    width: 121px;
+    height: 125px;
+    background-color: #fff;
+}
+.xz-er img{
+    width: 110px;
+}
+.xz-er p{
+    margin-top: -10px;
+}
+/* di - tp */
+
+.poster-main{
+    position: relative;
+    margin: 300px auto 0;
+}
+.poster-main .poster-list .poster-item{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.poster-main .poster-btn{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.poster-main .poster-prev-btn{
+    left: 0;
+    background: url("../img/btn_l.png") no-repeat center center;
+}
+.poster-main .poster-next-btn{
+    right: 0;
+    background: url("../img/btn_r.png") no-repeat center center;
+}
+
+

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-width: 1000px;
+}
+p,div,span{
+    cursor:default
+}
+/* to */
+.main{
+    height: 1455px;
+    position: relative;
+    background: url('../img/sy-bj.jpg')no-repeat center center;
+    background-color: #283e79;
+}
+.wrapper{
+    position: relative;
+    /* height: 100%; */
+    width: 1180px;
+    margin: 0 auto;
+}
+.top-bg{
+    position: relative;
+}
+.top-bg-1{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 62px;
+    background-color: #666;
+}
+.top-bg-2{
+    position: absolute;
+    top: 62px;
+    width: 100%;
+    height: 97px;
+    background-color: #283e79;
+}
+.top{
+    position: relative;
+    z-index: 2;
+    height: 145px;
+}
+.top-logo{
+    position: absolute;
+    top: 62px;
+    height: 83px;
+}
+.logo{
+    margin-top: 20px;
+    float: left;
+}
+.top .top-logo-text{
+    position: absolute;
+    top: 19px;
+    left: 90px;
+    color: #fff;
+}
+.nav{
+    margin-left: 200px;
+}
+.nav li{
+    margin: 30px 30px 0;
+    font-size: 20px;
+    float: left;
+    text-align:center;
+}
+.nav li>a{
+    color: #fff;
+}
+.nav .nav-show{
+    width: 105px;
+    height: 28px;
+    border-radius: 15px;
+    background-color: #f5a51a;
+}
+.top .service{ 
+    position: absolute;
+    margin-top: 20px;
+    right: -200px;
+    width: 200px;
+}
+.service .fx-wx-er{
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.service .fx-yx-er{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.service-div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 16px;
+}
+.gz-logo{
+    position: absolute;
+    top: 90px;
+    left: 170px;
+}
+/* wei */
+.footer{
+    position: relative;
+    width: 100%;
+    color: #666;
+    font-size: 16px;    
+    margin-top: 80px;
+    text-align: center;
+}
+.share-tb{
+    vertical-align:middle;
+    margin: 0 5px 0 8px ;
+}
+.footer .copyright{
+    width: 850px;
+    text-align: left;
+    position: absolute;
+    top: 40px;
+    left: 230px;
+}
+.copyright-text{
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    color: #999;
+}
+
+.copyright-text a{
+    margin: 0 3px 0 0 ;
+    font-size: 12px;
+    color: #999;
+}
+.fx-bq{
+    padding-top: 10px;
+} 

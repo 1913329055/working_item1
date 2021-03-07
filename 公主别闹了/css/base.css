@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-width: 1000px;
+}
+p,div,span{
+    cursor:default
+}
+/* to */
+.main{
+    height: 1500px;
+    position: relative;
+    background: url('../img/bg.png')no-repeat center center;
+    background-color: #001544;
+}
+.wrapper{
+    position: relative;
+    /* height: 100%; */
+    width: 1180px;
+    margin: 0 auto;
+}
+.top{
+    position: relative;
+    height: 79px;
+}
+.logo{
+    margin-top: 20px;
+    float: left;
+}
+.top .top-logo-text{
+    position: absolute;
+    top: 19px;
+    left: 90px;
+    color: #fff;
+}
+.nav{
+    margin-left: 200px;
+}
+.nav li{
+    margin: 30px 30px 0;
+    font-size: 20px;
+    float: left;
+    text-align:center;
+}
+.nav li>a{
+    color: #fff;
+}
+.nav .nav-show{
+    width: 105px;
+    height: 28px;
+    border-radius: 15px;
+    background-color: #f5a51a;
+}
+.top .service{ 
+    position: absolute;
+    margin-top: 20px;
+    right: 0;
+    width: 200px;
+}
+.service .fx-wx-er{
+    margin-top: -20px
+}
+.service .fx-yx-er{
+    margin-top: -20px
+}
+.service-div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 16px;
+}
+.gz-logo{
+    position: absolute;
+    top: 90px;
+    left: 170px;
+}
+/* wei */
+.footer{
+    position: relative;
+    width: 100%;
+    color: #666;
+    font-size: 16px;    
+    margin-top: 370px;
+    text-align: center;
+}
+.share-tb{
+    vertical-align:middle;
+    margin: 0 5px 0 8px ;
+}
+.footer .copyright{
+    width: 850px;
+    text-align: left;
+    position: absolute;
+    top: 40px;
+    left: 230px;
+}
+.copyright-text{
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    color: #999;
+}
+
+.copyright-text a{
+    margin: 0 3px 0 0 ;
+    font-size: 12px;
+    color: #999;
+}
+.fx-bq{
+    padding-top: 10px;
+} 

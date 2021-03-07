@@ -1,0 +1,212 @@
+/* 内容  前刀 */
+.content{
+    position: relative;
+    width: 100%;
+}
+.qiandao{
+    position: absolute;
+    top: 459px;
+    left: 1114px;
+    width: 136px;
+    height: 142px;
+    background: url('../img/qian-dao.png') no-repeat;
+    z-index: 3;
+}
+
+/* 左侧边 */
+.sidebar-bg{
+    position: absolute;
+    top: 320px;
+    left: 0;
+    background:#fff;
+    opacity: 0.3; 
+    width: 282px;
+    height: 557px;
+}
+.sidebar-xz{
+    position: absolute;
+    top: 320px;
+    left: 0;
+    width: 282px;
+    height: 557px;
+    float: left;
+}
+.sidebar-xz .tb{
+    z-index: 2;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sidebar-xz .tb img{
+    vertical-align: middle;
+}
+.er{
+    width: 220px;
+    height: 230px;
+    margin: auto auto;
+    background-color: #fff;
+    text-align: center;
+    z-index: 2;    
+}   
+.er p{
+    padding-bottom: 20px;
+}
+.xz{
+    z-index: 2;
+}
+.app{
+    width: 75%;
+    height: 60px;
+    background-color: #121212;
+    cursor:pointer;
+    margin: 15px auto 0;
+    border-radius: 5px;
+    border: 1px solid #999;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+.an{
+    width: 75%;
+    height: 60px;
+    background-color: #fdb205;
+    cursor:pointer;
+    margin: 6px auto 0;
+    border-radius: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    
+}
+.app:hover{
+   background-color: #393939; 
+}
+.an:hover{
+    background-color:#e49100; 
+}
+.xz input[placeholder]{
+    margin-left: 35px;
+    margin-top: 6px;
+    width: 50%;
+    height: 35px;
+    float: left;
+    border-radius: 2px;    
+}
+.send{
+    width: 65px;
+    height: 39px;
+    margin-left: 180px;
+    margin-top: 6px;  
+    cursor:pointer;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    background-color: #fdb205;
+    border-radius: 2px;    
+}
+.send:hover{
+    background-color:#e49100;       
+}
+.sidebar-gzh{
+    position: relative;
+    margin-left: 30px;
+}
+.fx-yx-er{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.fx-wx-er{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 1;
+}
+.sidebar-gzh div{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    color: #fff;
+    top:15px;
+    left: 105px;
+}
+/* 内容文字 */
+.wz{
+    width: 800px;
+    height: 730px;
+    overflow: auto;    
+}
+.content-wz{
+    position: absolute;
+    position: relative;
+    top: 320px;
+    left: 0px;
+    width: 900px;
+    height: 910px;
+    margin-left: 282px;
+    background-color: #fff;
+    padding-top: 50px;
+}
+.title{
+    margin-left: 50px;
+}
+.title h2{
+    color: #000;
+}
+.title p,.title a{
+    font-size: 14px;
+    color: #999;
+}
+.bian{    
+    width: 750px;
+    height: 3px;
+    background-color: #000;
+    opacity: 0.1;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.T-title{
+    text-align: center;
+    color: #f1771d;
+    font-size: 24px;
+    margin-bottom: 13px;
+}
+.T-sj{
+    /* text-indent:35px; */
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+.wz-nr{
+    color: #666;
+    width: 600px;
+    margin: auto auto;
+}
+.wz-nr p{
+    text-indent:35px;
+    margin-bottom: 15px;
+}
+.wz-nr a{
+    color: #f1771d;
+}
+.wz-nr .wz-tt-div{
+    width: 600px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #efefef;
+    margin-bottom: 25px;
+}
+.wz-nr .wz-tt-div .wz-p{
+    text-indent:25px;
+}
+.wz-tt-div div{ 
+    width: 10px;
+    height: 30px;
+    background-color: #000;
+    float: left;
+}
+.wz-tt{
+    color: #000;
+}

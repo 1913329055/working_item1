@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>More Purchases, More Rewards</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover">
+    <meta property="og:site_name" content="PUBG MOBILE More Purchases, More Rewards">
+    <meta property="og:title" content="PUBG MOBILE More Purchases, More Rewards">
+    <meta property="og:description" content="PUBG MOBILE More Purchases, More Rewards">
+    <meta property="og:url" content="http://www.pubgmobile.com">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/basics.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @media screen and (max-width: 1024px) {
+            .swiper-container {
+                left: 23%;
+            }
+            .text-box {
+                width: 260px!important;
+                background-size: 270px 100%!important;
+            }
+            .friend-name {
+                line-height: 30px!important;
+            }
+            .login_name {
+                line-height: 34px;
+                font-size: 28px;
+            }
+            .login_id {
+                font-size: 20px;
+            }
+            .login_text {
+                font-size: 20px;
+            }
+            .prize-box {
+                margin-top: -50px;
+            }
+        }
+        @media screen and (max-width: 960px) {
+            .login_text {
+                font-size: 16px;
+            }
+        }
+        @media screen and (max-width: 750px) {
+            .swiper-container {
+                width: 70%;
+                left: 50%;
+                transform: translateX(-50%)!important;
+            }
+            .swiper-slide {
+                width: 100%!important;
+            }
+            .text-box {
+                margin-left: 50px!important;
+                width: 80%!important;
+                background-size: 100% auto!important;
+                margin-top: 15px;
+            }
+            .friend-name {
+                margin-left: 30px!important;
+                text-align: left!important;
+                line-height: 36px!important;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .text-box {
+                background-size: 95% auto!important;
+                margin-left: 45px!important;
+            }
+            .friend-name {
+                line-height: 28px!important;
+                font-size: 16px!important;
+            }
+        }
+        @media screen and (max-width: 550px) {
+            .text-box {
+                margin-left: 40px!important;
+            }
+            .friend-name {
+                line-height: 24px!important;
+                font-size: 14px!important;
+                margin-left: 20px!important;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .prize-box {
+                margin-top: -70px;
+            }
+            .text-box {
+                background-size: 93% auto!important;
+                margin-left: 40px!important;
+            }
+            .friend-name {
+                line-height: 18px!important;
+                font-size: 12px!important;
+            }
+            .login_name {
+                line-height: 32px;
+                font-size: 24px;
+            }
+            .login_id {
+                font-size: 18px;
+            }
+            .login_text {
+                font-size: 16px;
+            }
+        }
+        @media screen and (max-width: 430px) {
+            .login_box {
+                left: 100px;
+            }
+            .login_head {
+                width: 50px;
+                height: 50px;
+                left: 7px;
+            }
+            .login_box {
+                left: 80px;
+            }
+            .login_id {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            .login_name {
+                margin-top: 5px;
+                line-height: 28px;
+                font-size: 20px;
+            }
+            .login_text {
+                font-size: 14px;
+            }
+            .btn {
+                margin-top: 40px!important;
+                margin-bottom: -5px!important;
+            }
+            .text-box {
+                background-size: 92% auto!important;
+                margin-left: 30px!important;
+            }
+            .friend-name {
+                line-height: 20px!important;
+                font-size: 10px!important;
+                margin-left: 15px!important;
+            }
+            .swiper-button-next, .swiper-button-prev {
+                transform: translateY(15%);
+            }
+        }
+        @media screen and (max-width: 375px) {
+            .swiper-container {
+                transform: translate(-50%,60%)!important;
+            }
+            .text-box {
+                transform: translateY(-70%);
+                margin-left: 27px!important;
+            }
+            .friend-name {
+                font-size: 10px!important;
+                line-height: 16px!important;
+            }
+            .login_head {
+                width: 40px;
+                height: 40px;
+            }
+            .login_box {
+                left: 70px;
+            }
+            .login_id {
+                font-size: 12px;
+                line-height: 14px;
+            }
+            .login_name {
+                line-height: 24px;
+                font-size: 16px;
+            }
+            .login_text {
+                font-size: 12px;
+            }
+            .btn {
+                margin-top: 40px!important;
+                margin-bottom: -10px!important;
+            }
+            .swiper-button-next, .swiper-button-prev {
+                transform: translateY(5%);
+            }
+        }
+        @media screen and (max-width: 374px) {
+            .text-box {
+                transform: translateY(-65%);
+                margin-left: 23px!important;
+            }
+            .btn {
+                margin-top: 40px!important;
+                margin-bottom:0px!important;
+            }
+            .friend-name {
+                font-size: 6px!important;
+                line-height: 12px!important;
+                margin-left: 10px!important;
+            }
+            .swiper-button-next, .swiper-button-prev {
+                transform: translateY(10%);
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(21, 26, 50)">
+    <div class="wrap">
+        <!-- 头部 -->
+        <div class="header" style="background-color:rgba(0,0,0,.3)">
+            <div class="max-content">
+
+                <div class="logo_wrap">
+                    <!-- logo 添加 width_auto宽度自适应-->
+                    <div class="logo width_auto">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <!-- logo 添加 height_auto 高度自适应 -->
+                    <div class="logo height_auto">
+                        <a href="#"><img src="images/midasbuy_logo.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- 如果未登录 user-info 添加noLogin -->
+                <div class="user-info">
+                    <div class="logined user-logined">
+                        <div class="login_user c">
+                            <p class="user_icon" style="background-image:url(images/user_img.jpg);"></p>
+                            <div class="user_infor">
+                                <p class="user_text">
+                                    <em>Nickname:</em><span>LisasamasamLisasamasamaa</span>
+                                </p>
+                                <p class="user_text">
+                                    <em>ID:</em><span>2456765</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang_box">
+                        <div class="lang_drop">
+                            <p class="lang_on">
+                                <i></i>
+                                <em>English</em>
+                            </p>
+                            <em class="lang_arrow"></em>
+                        </div>
+                        <ul class="lang_list">
+                            <li><i></i>English</li>
+                            <li><i></i>Hindi</li>
+                        </ul>
+                    </div>
+                    <div class="logined float-right">
+                        <a href="javascript:TGDialogS('pop_login');" style="display: none;">login via</a>
+                        <a href="javascript:;">log out</a>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+        <div class="content">
+            <!-- facebook按钮 如果未登录 a标签 添加noLogin -->
+            <div class="banner">
+                <div class="face_box">
+                    <a href="#" class="facebook-share"></a>
+                </div>
+                <img src="./images/banner_pc_en.png" data-original="./images/banner_pc_en.png" alt="" class="lazy_pc">
+                
+                <!-- < 下方pc显示  banner_pc_bg为背景  -->
+                <!-- <img src="./images/banner_pc_bg.png" data-original="./images/banner_pc_bg.png" alt=""
+                        class="banner_pc_bg"> -->
+                <!-- 下方pc显示人物 宽650*高自适应 
+                    <img src="./images/banner_pc_en.png" data-original="./images/banner_pc_en.png" alt=""
+                        class="lazy_pc">
+                </div> -->
+                <div class="banner_mobile">
+                    <!-- 下方mobile显示  banner_pc_bg为背景 -->
+                    <!-- <img src="./images/banner_mobile_bg.png" data-original="./images/banner_mobile_bg.png" alt="" class="lazy_moblile_bg"> -->
+                    <!-- 下方mobile人物 宽750*高自适应 -->
+                    <img src="./images/banner_mobile_en.png" data-original="./images/banner_mobile_en.png" alt=""
+                        class="lazy_moblile">
+                </div>
+                <div class="swiper_box">
+                    <div class="swiper-container" style="transform: translateY(-20%);">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="text-box" style="margin-left: 30px; width: 340px;padding-left: 0; background: url(./images/friend_bg_login.png) no-repeat;
+                                background-size: 340px 100%;">
+                                    <p class="friend-name" style="text-align: center;line-height: 40px;">Enter your game
+                                        friend's Share ID</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+                <div class="prize-box">
+                    <div href="" class="swiper-left"><img src="./images/swiper-left.png" alt=""></div>
+                    <div class="list-box">
+                        <div class="prize-list">
+                            <img class="prize" src="./images/prize_1.png" alt="">
+                            <span>Offer content1</span>
+                        </div>
+                        <div class="prize-list">
+                            <img class="prize" src="./images/prize_2.png" alt="">
+                            <span>Offer content 2</span>
+                        </div>
+                        <div class="prize-list">
+                            <img class="prize" src="./images/prize_3.png" alt="">
+                            <span>Offer content 3</span>
+                        </div>
+                    </div>
+                    <div href="" class="swiper-right"><img src="./images/swiper-right.png" alt=""></div>
+                </div>
+
+            </div>
+            <!-- 主体内容 -->
+            <div class="main" style="background-image: url(./images/mobile_bg.png);">
+                <div class="main-box">
+                    <div class="mian-bg" style="background-image: url(./images/line.png);"></div>
+                    <div class="prize-btns">
+                        <div class="btn-title">
+                            <div class="login_head">
+                            </div>
+                            <div class="login_box">
+                                <div class="login_name">My name</div>
+                                <div class="login_id">Player ID: 1637942067</div>
+                            </div>
+                            <div class="login_text">You already used all the disount invitation.</div>
+                        </div>
+                        <div class="btn"
+                            style="background: url(./images/click_login.png);background-size: 100% 100%; margin-top: 70px; margin-bottom:-20px;">
+                            USED</div>
+                        <a href="" class="tips" style="color: #d0c864;">Invite your own friends to win more!</a>
+                    </div>
+                    <div class="process_box">
+                        <div class="page_title">
+                            <div class="page_title_text">ACTIVE PROCESS</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="process-ul">
+                            <div class="process-list">
+                                <div class="process_line">
+                                    <img src="./images/process1.png">
+                                    <img src="./images/process_line.png" class="process_line_image">
+                                </div>
+                                <span>Input </br> Player ID</span>
+                            </div>
+                            <!-- <div class="process-list">
+                                <img src="./images/process_line.png" class="line">
+                            </div> -->
+                            <div class="process-list">
+                                <div class="process_line">
+                                    <img src="./images/process2.png" alt="">
+                                    <img src="./images/process_line.png" class="process_line_image">
+                                </div>
+                                <span>Accept Invitation</span>
+                            </div>
+                            <div class="process-list">
+                                <div class="process_line">
+                                    <img src="./images/process3.png" alt="">
+                                    <img src="./images/process_line.png" class="process_line_image">
+                                </div>
+                                <span>Choose</br> Item</span>
+                            </div>
+                            <div class="process-list">
+                                <div class="process_line">
+                                    <img src="./images/process4.png" alt="">
+                                    <img src="./images/process_line.png" class="process_line_image">
+                                </div>
+                                <span>Pay</span>
+                            </div>
+                            <div class="process-list">
+                                <img src="./images/process5.png" alt="">
+                                <span>Get</br> Bonus</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rules_box">
+                        <div class="page_title">
+                            <div class="page_title_text">ACTIVITY RULES</div>
+                        </div>
+                        <div class="rules_ul">
+                            <div class="rules_list"><span>1.</span>Transportation has been greatly changed in the past
+                                few years. In ancient days, people used to travel by horse or carriage. The journey was
+                                often</div>
+                            <div class="rules_list"><span>2.</span>tiring and tedious. Then people had buses, trains and
+                                ships, which could shorten the time of the long-distance trip. Now we hava not only more
+                            </div>
+                            <div class="rules_list"><span>3.</span>private cars, but also planes and high-speed rails.
+                                All of these modern transports could offer us a quick and pleasant travel. Thus, more
+                                and more people enjoy traveling very much these days.</div>
+                            <div class="rules_list"><span>4.</span>Transportation has been greatly changed has been
+                                greatly changed in the past
+                                few years Transportation has been greatly changed in the past few years</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部footer 修改背景色background:#0d1011; 修改字体颜色 color:rgba(255,255,255,.4)-->
+        <div class="footer" style="background:rgba(0,0,0,.4);color:rgba(255,255,255,.4)">
+            <div class="max-content">
+                <div class="foot">
+                    <div class="pubg_logo"><img src="images/logo.png" alt=""></div>
+                    <p class="copy_text">
+                        <!-- 修改字体颜色 color:rgba(255,255,255,.4) -->
+                        <a href="#" style="color:rgba(255,255,255,.4)">KETENTUAN LAYANAN</a> | <a href="#"
+                            style="color:rgba(255,255,255,.4)">PERNYATAAN PRIVASI</a></br>
+                        COPYRIGHT &copy; PUBG CORPORATION. ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp"></a>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+        var mySwiper = new Swiper ('.swiper-container', {
+            loop: true, // 循环模式选项
+    
+            // 如果需要前进后退按钮
+            // navigation: {
+            // nextEl: '.swiper-button-next',
+            // prevEl: '.swiper-button-prev',
+            // },
+        }) 
+               
+      </script>
+</body>
+
+</html>
