@@ -1,0 +1,706 @@
+body {
+    background-color: #151a32;
+}
+.main {
+    padding: 0 10%;
+    
+}
+.lazy_pc {
+    position: relative;
+    top: 120px;
+}
+.prize-box {
+    width: 66.67%;
+    padding: 0 6%;
+    display: table;
+    margin: 50px auto;
+    box-sizing: border-box;
+    position: relative;
+}
+.list-box {
+    margin: 0 auto;
+    width: 85%;
+}
+.prize-box .prize-list {
+    width: 26%;
+    display: inline-block;
+    color: #cfe1f2;
+    text-align: center;
+    margin-left: 10%;
+    position: relative;
+}
+.prize-list:first-child {
+    margin-left: 0;
+}
+.swiper-left, .swiper-right {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.swiper-right {
+    right: 9%;
+}
+.prize-box .prize-list .prize {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.prize-box .prize-list span {
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: 18px;
+}
+.banner {
+    padding-bottom: 30px;
+    background: url(../images/banner_pc_bg.png);
+    background-size: 100% 100%;
+}
+.banner .friend-box {
+    width: 63.6%;
+    display: table;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    /* box-sizing: border-box; */
+}
+
+.swiper-container {
+    width: 480px;
+    position: relative;
+    margin-bottom: 80px;
+    margin-left:23% ;
+}
+.friend-img {
+    width: 13%;
+    display: inline-block;
+    margin-left: 40px;
+}
+.footer .max-content {
+    max-width: 960px;
+}
+.text-box {
+    width: 320px;
+    background: url(../images/friend_bg.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    margin-left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.text-box .friend-id,.text-box .friend-name {
+    color: #eaebed;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.text-box .friend-name {
+    color: #e1d63c;
+}
+
+.mian-bg {
+    width: 100%;
+    height: 8px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prize-btns {
+    max-width: 960px;
+    height: 362px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 92%;
+    background-image: url(../images/frame_bg.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.btn-title {
+    width: 66.52%;
+    height: 100px;
+    background-image: url(../images/please.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 33px auto;
+    margin-bottom: 50px;
+    color: #93a9c1;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+}
+.login_head {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(66, 138, 189);
+}
+.login_box {
+    display: inline-block;
+    height: 100%;
+    text-align: left;
+    position: absolute;
+    left: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login_name {
+    line-height: 60px;
+    font-size: 36px;
+    color: #b8b15d;
+
+}
+.login_id {
+    font-size: 20px;
+    line-height: 20px;
+}
+.btn {
+    width: 51.77%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.tips {
+    width: 60%;
+    background: url(../images/please_right.png) no-repeat;
+    background-position: right center;
+    background-size: 32px;
+    font-size: 54px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tips a img {
+    width: 5%;
+    float: right;
+    margin: 7px;
+}
+
+.process_box {
+    width: 92%;
+    max-width: 960px;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    width: 92%;
+    background-image: url(../images/frame_bg.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background-size: 100% 100%;
+}
+
+.page_title {
+    width: 43%;
+    display: table;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.page_title_text {
+    font-size: 60px;
+    color: #dff1ff;
+    margin: 0 auto;
+    position: relative;
+}
+
+.page_title_text::before,
+.page_title_text::after {
+    width: 37px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    background-size: 37px 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page_title_text::before {
+    background: url(../images/page_title_left.png);
+    left: 0;
+}
+
+.page_title_text::after {
+    background: url(../images/page_title_right.png);
+    right: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.process-ul {
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+}
+
+.process-list {
+    width: 20%;
+    float: left;
+    /* margin-left: 30px; */
+    text-align: center;
+}
+
+.process-list img {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.process-list span {
+    width: 19%;
+    color: #9cbdda;
+    margin-top: 10px;
+    font-size: 32px;
+}
+.rules_ul {
+    margin-bottom: 80px;
+}
+.rules_box {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.rules_list {
+    font-size: 27px;
+    color: #c7d6e0;
+    margin-bottom: 46px;
+    word-break: break-all;
+    text-align: right;
+}
+.rules_list span {
+    color: #b8b15d;
+    float: right;
+}
+
+
+@media screen and (max-width: 1280px) {
+    
+    .process-list span{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .page_title_text{
+        font-size: 44px;
+    }
+    .tips {
+        font-size: 48px;
+    }
+    .rules_list {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 1152px) {
+    .text-box {
+        width: 60%;
+    }
+    .prize-box .prize-list span {
+        font-size: 16px;
+    }
+    .btn-title {
+        font-size: 24px;
+    }
+    .process-list span{
+        font-size: 24px;
+    }
+    .process-list span{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .tips {
+        font-size: 40px;
+    }
+    .swiper-container {
+        width: 340px;
+    }
+    .text-box {
+        width: 200px;
+        margin-left: 10px;
+        background-size: 100% 100%;
+    }
+    .text-box .friend-id,.text-box .friend-name {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .prize-box .prize-list span {
+        font-size: 15px;
+    }
+    .btn-title {
+        font-size: 20px;
+    }
+    .tips {
+        font-size: 36px;
+        background-size: 28px;
+    }
+    .page_title_text{
+        font-size: 32px;
+    }
+    .process-list span{
+        font-size: 20px;
+    }
+    .rules_list {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .prize-box .prize-list span {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .prize-box {
+        padding: 0;
+        margin-top: 30px;
+    }
+    .process-ul {
+        width: 90%;
+    }
+    .logined {
+        display: none;
+    }
+    .list-box {
+        width: 100%;
+    }
+    .page_title {
+        width: 50%;
+        display: table;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .prize-box .prize-list {
+        width: 24%;
+        margin-left: 7%;
+    }
+    .prize-btns {
+        padding-top: 1px;
+    }
+    .btn-title {
+        width: 90%;
+        font-size: 32px;
+    }
+    .btn {
+        width: 70%;
+    }
+    .lazy_pc {
+        display: none;
+    }
+    .facebook-share {
+        top: 120%;
+        right: 0px;
+        transform: scale(.85);
+    }
+    .swiper-container {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .friend-img {
+        width: 20%;
+        margin-left: 9%;
+    }
+    .text-box{
+        width: 55%;
+        height: 70%;
+        padding: 5px 10px;
+        margin-left: 10px;
+    }
+    .swiper-button-prev {
+        left: 3%;
+    }
+    .swiper-button-next {
+        right: 3%;
+    }
+    .prize-box {
+        width: 100%;
+    }
+    .prize-box .prize-list span{
+        font-size: 20px;
+    }
+    .main {
+        padding: 0;
+    }
+    .tips {
+        font-size: 40px;
+    }
+    .page_title_text {
+        font-size: 40px;
+    }
+
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .swiper-right, .swiper-left {
+        display: none;
+    }
+    .banner .lazy_moblile {
+        width: 100%;
+        left: 0%;
+    }
+
+    .banner_mobile {
+        text-align: center;
+        display: block;
+        /* margin-top: -56px; */
+        position: relative;
+    }
+
+    .lazy_moblile_bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner_pc {
+        display: none;
+    }
+    .logo_wrap, .user-info {
+        display: inline-block;
+    }
+     .user-info {
+        width: auto;
+    }
+}
+@media screen and (max-width: 680px) {
+    .prize-box .prize-list span{
+        font-size: 18px;
+    }
+    .btn-title {
+        font-size: 28px;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 18px;
+    }
+    .tips {
+        font-size: 36px;
+    }
+    .rules_list {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .prize-box .prize-list span{
+        font-size: 16px;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        line-height: 24px;
+    }
+    .facebook-share {
+        transform: scale(.75);
+    }
+    .page_title_text::before, .page_title_text::after {
+        transform: scale(.75) translateY(-70%);
+    }
+}
+@media screen and (max-width: 550px) {
+    .text-box{
+        width: 50%;
+        padding: 5px 10px;
+        margin-left: 5px;
+    }
+    .prize-box .prize-list span{
+        font-size: 18px;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 18px;
+    }
+    .btn-title {
+        font-size: 24px;
+    }
+    .tips {
+        font-size: 30px;
+    }
+    .page_title_text {
+        font-size: 32px;
+    }
+    .process-list span {
+        font-size: 18px;
+    }
+    .rules_list {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .prize-box .prize-list span{
+        font-size: 12px;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        line-height: 20px;
+    }
+    .tips {
+        font-size: 18px;
+    }
+    .process-list span{
+        font-size: 16px;
+    }
+    .page_title_text::before, .page_title_text::after {
+        transform: scale(.55) translateY(-100%);
+    }
+    .facebook-share {
+        transform: scale(.65);
+    }
+}
+
+@media screen and (max-width: 470px){
+    .copy_text {
+        padding-top: 10px;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .tips {
+        font-size: 16px;
+    }
+    .page_title_text {
+        font-size: 12px;
+    }
+    .prize-box .prize-list {
+        margin-left: 6%;
+    }
+    .btn-title {
+        height: 80px;
+    }
+    .login_head {
+        width: 60px;
+        height: 60px;
+    }
+    .login_box {
+        left: 120px;
+    }
+    .login_name {
+        line-height: 50px;
+        font-size: 28px;
+    }
+    .login_id {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .text-box {
+        padding: 5px 5px;
+    }
+    .friend-img {
+        margin-left: 12%;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .tips {
+        font-size: 14px;
+    }
+    .page_title_text {
+        font-size: 10px;
+    }
+    .page_title_text::before, .page_title_text::after {
+        transform: scale(.5) translateY(-110%);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .prize-box {
+        margin-bottom: 10px;
+    }
+    .prize-box .prize-list span {
+        font-size: 12px;
+        bottom: -20px;
+    }
+    .page_title_text {
+        font-size: 18px;
+    }
+
+    .tips {
+        background-size: 15px;
+        margin-bottom : 0;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .page_title_text::before, .page_title_text::after {
+        transform: scale(.4) translateY(-130%);
+    }
+    .page_title {
+        margin: 20px auto;
+    }
+    .prize-btns {
+        margin-top: 40px;
+        height: 240px;
+    }
+    .btn-title {
+        font-size: 18px;
+        line-height: 80px;
+    }
+    .login_box {
+        left: 100px;
+    }
+    .login_name {
+        line-height: 50px;
+        font-size: 24px;
+    }
+    .login_id {
+        font-size: 14px;
+    }
+    .process_box {
+        margin-top: 40px;
+    }
+    .rules_list {
+        font-size: 12px;
+        margin-bottom: 30px;
+}
+
+@media screen and (max-width: 374px) {
+    .btn-title {
+        height: 60px;
+        line-height: 60px;
+    }
+    .tips {
+        width: 82%;
+        font-size: 24px;
+    }
+    .indonesia-wrap .user_infor {
+        width: 90px;
+    }
+    .prize-btns {
+        height: 230px;
+    }
+    .process_box {
+        padding-bottom: 30px;
+    }
+    .login_name {
+        font-size: 20px;
+    }
+    .process-list span {
+        font-size: 14px;
+    }
+}

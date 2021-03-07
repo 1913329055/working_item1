@@ -1,0 +1,1074 @@
+body {
+    background-color: #151a32;
+}
+.face_box {
+    margin: 0 auto;
+    width: 92%;
+    max-width: 960px;
+    position: relative;
+}
+.facebook-share {
+    right: 0;
+}
+.main {
+    padding: 0 10%;
+    background-size: cover;
+}
+.lazy_pc {
+    width: 800px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+.prize-box {
+    width: 66.67%;
+    max-width: 960px;
+    padding: 0 70px;
+    display: table;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+.list-box {
+    margin: 0 auto;
+    width: 75%;
+}
+.prize-box .prize-list {
+    width: 26%;
+    display: inline-block;
+    color: #cfe1f2;
+    text-align: center;
+    margin-left: 10%;
+    position: relative;
+}
+.prize-list:first-child {
+    margin-left: 0;
+}
+.swiper-left, .swiper-right {
+    display: none!important;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.swiper-right {
+    right: 9%;
+}
+.prize-box .prize-list .prize {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.prize-box .prize-list span {
+    width: 100%;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    font-size: 22px;
+    height: 52px;
+}
+.banner {
+    height: 100%;
+    background: url(../images/banner_pc_bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 80px;
+}
+.banner .friend-box {
+    width: 63.6%;
+    display: table;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    /* box-sizing: border-box; */
+}
+.swiper_box {
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: -30px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.swiper-container {
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    bottom: 35.73%;
+    left: 120px;
+}
+.friend-img {
+    width: 16%;
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 2px;
+}
+.footer .max-content {
+    max-width: 960px;
+}
+.text-box {
+    width: 230px;
+    background: url(../images/friend_bg.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.text-box .friend-id,.text-box .friend-name {
+    color: #eaebed;
+    font-size: 18px;
+    line-height: 25px;
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.text-box .friend-name {
+    color: #e1d63c;
+    font-weight: bold;
+}
+
+.mian-bg {
+    width: 100%;
+    height: 8px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prize-btns {
+    max-width: 960px;
+    height: 362px;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    width: 92%;
+    background-image: url(../images/frame_bg.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.btn-title {
+    width: 66.52%;
+    height: 90px;
+    background-image: url(../images/please.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 33px auto;
+    margin-bottom: 50px;
+    color: #93a9c1;
+    font-size: 26px;
+    text-align: center;
+    line-height: 90px;
+    position: relative;
+}
+.login_head {
+    background:url(../images/user_img.jpg);
+    background-size: 100%;
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    border: 1px solid rgb(66, 138, 189);
+}
+.login_box {
+    display: inline-block;
+    height: 100%;
+    text-align: left;
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login_name {
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 33px;
+    color: #b8b15d;
+
+}
+.login_id {
+    font-size: 24px;
+    line-height: 30px;
+}
+.login_text {
+    margin-top: 6px;
+    font-size: 26px;
+    line-height: 32.5px;
+    position: absolute;
+    top: 100%;
+    opacity: 0.6;
+}
+.indonesia-wrap .login_text{
+    right: 0;
+}
+.btn {
+    line-height: 90px;
+    width: 51.77%;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    font-size: 40px;
+    color:#fff;
+    font-weight: bold;
+}
+
+.tips {
+    width: 60%;
+    max-width: 576px;
+    background: url(../images/please_right.png) no-repeat;
+    background-position: right center;
+    background-size: 22px;
+    font-size: 33px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.process_box {
+    width: 92%;
+    max-width: 960px;
+    height: 100%;
+    padding-top: 1px;
+    padding-bottom: 70px;
+    width: 92%;
+    background-image: url(../images/frame_bg.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 76px;
+    margin-bottom: 30px;
+    background-size: 100% 100%;
+}
+
+.page_title {
+    width: 48%;
+    display: table;
+    margin: 60px auto;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.page_title_text {
+    font-family: Helvetica;
+    font-size: 40px;
+    color: #dff1ff;
+    margin: 0 auto;
+    position: relative;
+    font-weight: bold;
+}
+
+.page_title_text::before,
+.page_title_text::after {
+    width: 37px;
+    height: 22px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page_title_text::before {
+    background: url(../images/page_title_left.png);
+    left: 0;
+}
+
+.page_title_text::after {
+    background: url(../images/page_title_right.png);
+    right: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.process-ul {
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+}
+
+.process-list {
+    width: 20%;
+    float: left;
+    /* margin-left: 30px; */
+    text-align: center;
+}
+
+.process-list img {
+    width:60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.process_line{
+    position: relative;
+}
+.process-list .process_line_image{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+.process-list span {
+    width: 19%;
+    color: #9cbdda;
+    margin-top: 10px;
+    font-size: 27px;
+}
+.rules_ul {
+    padding-bottom: 60px;
+}
+.indonesia-wrap .rules_ul{
+    direction: rtl;
+}
+.rules_box {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.rules_list span {
+    color: #b8b15d;
+}
+
+.rules_list {
+    font-size: 27px;
+    color: #c7d6e0;
+    margin-bottom: 46px;
+    word-break: break-all;
+    line-height: 40px;
+}
+.indonesia-wrap .page_title_text {
+    font-size: 50px;
+}
+.indonesia-wrap .tips {
+    width: 40%;
+}
+.indonesia-wrap .login_head {
+    position: absolute;
+    left: auto;
+    right: 13px;
+}
+.indonesia-wrap .login_box {
+    text-align: right;
+    left: auto;
+    right: 120px;
+}
+.indonesia-wrap .tips {
+    text-align: right;
+    background: url(../images/please_left.png) no-repeat;
+    background-position: left center;
+}
+.indonesia-wrap .swiper_box_arab .friend-img {
+    float: right;
+    margin-right: 35px;
+}
+.indonesia-wrap .swiper_box_arab .text-box {
+    right: 27%;
+}
+.indonesia-wrap .swiper_box_arab .friend-id, .indonesia-wrap .swiper_box_arab .friend-name {
+    text-align: right;
+}
+@media screen and (max-width: 1280px) {
+    .prize-box .prize-list span {
+        font-size: 20px;
+        height: 48px;
+    }
+    .tips {
+        font-size: 32px;
+    }
+    .process-list span{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .prize-box .prize-list span {
+        font-size: 18px;
+        height: 42px;
+    }
+    .page_title_text{
+        font-size: 32px;
+    }
+    .btn {
+        font-size: 32px;
+        line-height: 80px;
+    }
+    .tips {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1152px) {
+    .prize-box .prize-list span {
+        font-size: 16px;
+        height: 38px;
+        bottom: -50px;
+    }
+    .tips {
+        font-size: 28px;
+    }
+    .process-list span{
+        font-size: 24px;
+    }
+    .page_title_text{
+        font-size: 32px;
+    }
+    .process-list span{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .btn-title {
+        height: 80px;
+        font-size: 24px;
+        line-height: 80px;
+        margin-top: 50px;
+    }
+    .prize-box .prize-list span {
+        font-size: 15px;
+        height: 35px;
+        bottom: -50px;
+    }
+    .btn {
+        font-size: 28px;
+        line-height: 70px;
+    }
+    .tips {
+        font-size: 26px;
+    }
+    .swiper-container {
+        width: 340px;
+    }
+    .text-box {
+        width: 190px;
+        background-size: 100% 100%;
+        margin-left: 5px;
+    }
+    .text-box .friend-id,.text-box .friend-name {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .friend-img {
+        margin-left: 35px;
+        margin-top: 6px;
+    }
+    .indonesia-wrap .page_title_text {
+        font-size: 40px;
+    }
+    .page_title_text::before, .page_title_text::after {
+        transform:translateY(-50%) scale(.7);
+    }
+}
+@media screen and (max-width: 960px) {
+    .banner {
+        padding-bottom: 60px;
+    }
+    .prize-box .prize-list span {
+        font-size: 14px;
+        height: 33px;
+        bottom: -45px;
+    }
+    .btn-title {
+        font-size: 20px;
+    }
+    .tips {
+        font-size: 24px;
+        background-size: 16px;
+    }
+    .page_title_text{
+        font-size: 28px;
+    }
+    .process-list span{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .page_title_text{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .prize-box {
+        padding: 0 40px;
+    }
+    .btn {
+        font-size: 26px;
+    }
+    .tips {
+        font-size: 20px;
+    }
+    .page_title_text{
+        font-size: 24px;
+    }
+    .rules_list {
+        font-size: 24px;
+    }
+    .indonesia-wrap .login_box {
+        right: 100px;
+    }
+}
+@media screen and (max-width: 782px) {
+    .list-box {
+        width: 80%;
+    }
+    .prize-btns {
+        height: 320px;
+    }
+    .btn-title {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .prize-box {
+        padding: 0;
+        margin-top: 30px;
+    }
+    .process-ul {
+        width: 90%;
+    }
+    .list-box {
+        width: 100%;
+    }
+    .page_title {
+        width: 55%;
+        display: table;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .prize-box .prize-list {
+        width: 24%;
+        margin-left: 7%;
+    }
+    .prize-btns {
+        padding-top: 1px;
+        height: 350px;
+    }
+    .btn-title {
+        width: 90%;
+        font-size: 26px;
+        margin-bottom: 50px;
+    }
+    .btn {
+        width: 70%;
+        font-size: 40px;
+        line-height: 90px;
+    }
+    .lazy_pc {
+        display: none;
+    }
+    .facebook-share {
+        right: 0px;
+        transform: scale(.85);
+    }
+    .swiper-container {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 5px 0;
+        height: 70px;
+        transform: translateY(20%);
+    }
+    .friend-img {
+        margin-left: 9%;
+        margin-top: -3px;
+    }
+    .text-box{
+        background-size: 100% 100%;
+        width: 60%;
+        height: 100%;
+        margin-left: 10px;
+    }
+    .swiper-button-prev {
+        left: 3%;
+    }
+    .swiper-button-next {
+        right: 3%;
+    }
+    .prize-box {
+        width: 100%;
+    }
+    .prize-box .prize-list span{
+        font-size: 22px;
+        height: 52px;
+        bottom: -60px;
+    }
+    .main {
+        padding: 0;
+    }
+    .tips {
+        width: 77%;
+        font-size: 30px;
+        background-size: 22px;
+        margin-top: 50px;
+    }
+    .page_title_text {
+        font-size: 32px;
+    }
+
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .text-box .friend-id {
+        margin: 3px 18px;
+    }
+    .swiper-right, .swiper-left {
+        display: none;
+    }
+    .banner .lazy_moblile {
+        width: 100%;
+        left: 0%;
+    }
+    .lazy_moblile {
+        height: 100%;
+    }
+    .banner_mobile {
+        text-align: center;
+        display: block;
+        /* margin-top: -56px; */
+        position: relative;
+    }
+
+    .lazy_moblile_bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner_pc {
+        display: none;
+    }
+    .logo_wrap, .user-info {
+        display: inline-block;
+    }
+    .indonesia-wrap .page_title_text {
+        font-size: 40px;
+    }
+    .indonesia-wrap .tips {
+        width: 50%;
+    }
+    .indonesia-wrap .login_box {
+        right: 120px;
+    }
+    .indonesia-wrap .swiper_box_arab .friend-img {
+        margin-right: 45px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .friend-img {
+        width:85px;
+    }
+    .text-box {
+        width: 57%;
+    }
+    .prize-box .prize-list span{
+        font-size: 20px;
+    }
+    .tips {
+        font-size: 28px;
+        background-size: 18px;
+    }
+    .page_title_text {
+        font-size: 28px;
+    }
+    .rules_list {
+        font-size: 24px;
+    }
+    .indonesia-wrap .swiper_box_arab .text-box {
+        right: 29%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .prize-box .prize-list span{
+        font-size: 18px;
+        bottom: -55px;
+        height: 42px;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        line-height: 24px;
+        font-size: 18px;
+    }
+    .facebook-share {
+        transform: scale(.75);
+    }
+    .tips {
+        font-size: 24px;
+    }
+    .page_title_text {
+        font-size: 24px;
+    }
+    .swiper-container {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 5px 0;
+        height: 60px;
+        transform: translate(-10%,50%);
+    }
+    .friend-img {
+        width:75px;
+    }
+    .text-box{
+        margin-left: 8px;
+    }
+    .btn {
+        font-size: 32px;
+        line-height: 70px;
+    }
+    .indonesia-wrap .page_title_text {
+        font-size: 32px;
+    }
+    .indonesia-wrap .swiper_box_arab .friend-img {
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .rules_ul {
+        padding-bottom: 30px;
+    }
+    .friend-img {
+        width:70px;
+    }
+    .text-box{
+        width: 55%;
+    }
+    .swiper-container {
+        height: 55px;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .btn-title {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 28px;
+    }
+    .tips {
+        font-size: 22px;
+    }
+    .page_title_text {
+        font-size: 22px;
+    }
+    .page_title_text::before, .page_title_text::after {
+        transform: translateY(-50%) scale(.5);
+    }
+    .process-list span {
+        font-size: 14px;
+    }
+    .rules_list {
+        font-size: 20px;
+    }
+    .indonesia-wrap .swiper_box_arab .friend-img {
+        margin-right: 35px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .page_title_text::before, .page_title_text::after {
+        transform:translateY(-50%) scale(.5);
+    }
+    .prize-box .prize-list span{
+        font-size: 16px;
+        height: 38px;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 10px;
+    }
+    .page_title_text {
+        font-size: 20px;
+    }
+    .tips {
+        font-size: 20px;
+    }
+    .process-list span{
+        font-size: 12px;
+    }
+    .facebook-share {
+        transform: scale(.65);
+    }
+    .btn {
+        font-size: 26px;
+    }
+    .swiper-container {
+        height: 45px;
+    }
+    .friend-img {
+        width:60px;
+    }
+    .text-box{
+        width: 55%;
+    }
+    .indonesia-wrap .page_title_text {
+        font-size: 28px;
+    }
+    .indonesia-wrap .login_box {
+        right: 100px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .page_title_text {
+        font-size: 18px;
+    }
+    .rules_list {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .indonesia-wrap .swiper_box_arab .friend-img {
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .banner {
+        padding-bottom: 60px;
+    }
+    .prize-box .prize-list span {
+        bottom: -45px;
+        font-size: 14px;
+        height: 33px;
+    }
+    .prize-btns {
+        margin-top: 30px;
+        height: 190px;
+    }
+    .swiper-container {
+        transform: translate(-20%,70%);
+    }
+    .text-box {
+        width: 58%;
+        height: 35px;
+        padding-left: 0;
+        margin-left: 5px;
+        padding-top: 2px;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .swiper-button-prev {
+        left: 1%;
+    }
+    .friend-img {
+        width: 45px;
+        margin-top: 2px;
+    }
+    .tips {
+        font-size: 17px;
+        background-size: 12px;
+        margin-top: 20px;
+    }
+    .btn-title {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .btn {
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .page_title_text {
+        font-size: 16px;
+    }
+    .process_box {
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+    .page_title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .rules_list {
+        line-height: 28px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .indonesia-wrap .page_title_text {
+        font-size: 24px;
+    }
+    .indonesia-wrap .login_box {
+        right: 80px;
+    }
+    .indonesia-wrap .tips {
+        background-size: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner {
+        padding-bottom: 30px;
+    }
+    .swiper-container {
+        transform: translate(-20%,80%);
+        height: 40px;
+    }
+    .friend-img {
+        width: 40px;
+        margin-top: 2px;
+    }
+    .text-box {
+        height: 30px;
+    }
+    .text-box .friend-id {
+        margin-bottom: 0;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 2px;
+    }
+    .prize-box {
+        margin-bottom: 10px;
+    }
+    .prize-box .prize-list span {
+        font-size: 12px;
+        height: 28px;
+        bottom: -35px;
+    }
+    .page_title_text {
+        font-size: 14px;
+    }
+    .page_title_text:first-child {
+        margin-bottom: 10px;
+    }
+    .tips {
+        font-size: 16px;
+        background-size: 10px;
+        margin-bottom : 0;
+        margin-top: 30px;
+    }
+    .page_title_text::before, .page_title_text::after {
+        transform: translateY(-50%) scale(.4);
+    }
+    .process_box {
+        padding-bottom: 40px;
+        padding-top: 10px;
+    }
+    .page_title {
+        margin: 20px auto;
+    }
+    .prize-btns {
+        margin-top: 30px;
+        height: 220px;
+        padding-bottom: 0;
+    }
+    .btn {
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .btn-title {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .login_box {
+        left: 100px;
+    }
+    .login_name {
+        line-height: 50px;
+        font-size: 24px;
+    }
+    .login_id {
+        font-size: 14px;
+    }
+    .process_box {
+        margin-top: 40px;
+    }
+    .rules_list {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .facebook-share {
+        transform: scale(.6);
+    }
+    .indonesia-wrap .page_title_text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .swiper-container {
+        transform: translate(-30%,100%);
+    }
+    .friend-img {
+        margin-left: 10%;
+        width: 35px;
+        margin-top: 5px;
+    }
+    .prize-box .prize-list span {
+        font-size: 11px;
+    }
+    .prize-btns {
+        margin-top: 40px;
+        height: 200px;
+    }
+    .text-box {
+        margin-left: 3px;
+        width: 55%;
+        height: 25px;
+    }
+    .text-box .friend-id, .text-box .friend-name {
+        font-size: 8px;
+        line-height: 12px;
+    }
+    .btn-title {
+        font-size: 16px;
+        margin-bottom:25px;
+    }
+    .btn{
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .tips {
+        width: 82%;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .indonesia-wrap .user_infor {
+        width: 90px;
+    }
+    .process_box {
+        padding-bottom: 30px;
+    }
+    .login_name {
+        font-size: 20px;
+    }
+    .page_title_text {
+        font-size: 12px;
+    }
+    .facebook-share {
+        transform: scale(.5);
+    }
+    .indonesia-wrap .page_title_text {
+        font-size: 18px;
+    }
+    .indonesia-wrap .login_box {
+        right: 70px;
+    }
+}

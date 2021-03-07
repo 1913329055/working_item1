@@ -1,0 +1,268 @@
+body{
+    background: #fff;
+}
+.header{
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    box-shadow: inset 0 -1px 0 0 #EEEEEE;
+    padding: none;
+}
+.header-centent{
+    width: 1200px;
+    margin: 0 auto;
+}
+.content{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.sidebar {
+    width: 176px;
+    height: 100%;
+    /* padding-left: 112px; */
+    border-right: 1px solid #e0e0e0;
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    z-index: 997;
+}
+
+.instrution {
+    margin: 25px 0 36px 0;
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+}
+
+.seach input {
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    border-radius: 2px;
+    width: 164px;
+    height: 28px;
+    outline: none;
+}
+
+.hidden-scroll {
+    display: inline-block;
+}
+
+.menu {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    color: #555555;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.menu-li {
+    margin-top: 16px;
+    font-family: PingFangSC-Medium;
+    color: #333333;
+    letter-spacing: 0;
+    cursor:pointer;
+}
+
+.list-name {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.list-name1 {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #3371FF;
+}
+
+.second-menu {
+    list-style: none;
+    margin-left: 17px;
+}
+
+.second-menu .active {
+    font-family: PingFangSC-Regular;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #666666;
+    line-height: 14px;
+}
+
+
+/* sidebar end */
+
+.sum {
+    opacity: 0.8;
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.cont1 {
+    width: 904px;
+    height: 333px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #666666;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.cont1 span {
+    margin-top: 48px;
+    display: block;
+}
+
+.cont2 {
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #0052D9;
+    text-align: justify;
+    line-height: 28px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.cont2,
+.cont3 {
+    margin-top: 40px;
+}
+
+.cont3 {
+    margin-bottom: 24.2px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #666666;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.NER table {
+    text-align: center;
+    border: 1px #E8F0FF solid;
+    border-collapse: collapse;
+    box-shadow: 0 1px 4px 0 #E5E9EB;
+    overflow: hidden;
+}
+.NER table thead {
+    opacity: 0.65;
+    background: #E8F0FF;
+    box-shadow: inset -1px 0 0 0 #D8E1FD;
+}
+.NER table thead td {
+    border-right: 1px solid #E8F0FF;
+}
+td {
+    padding: 12.8px 0;
+}
+.pad tbody td:last-child {
+    padding: 12.8px 12.8px;
+    text-align: left;
+}
+.NER thead td:last-child {
+    background: #FFFFFF;
+    border: 1 #000 solid;
+}
+.NER {
+    margin-bottom: 48.5px;
+}
+
+/* NER end */
+.cont4 {
+    margin-bottom: 24.8px;
+}
+.TexSmart {
+    width: 707.2px;
+    background: #FFFFFF;
+    border: 0 solid #E5E9EB;
+    box-shadow: 0 5px 16px 0 rgba(94, 139, 231, 0.09);
+    border-radius: 3.2px;
+    border-radius: 3.2px;
+}
+.pad {
+    padding: 0 19px;
+    padding-bottom: 28.8px;
+}
+.cont5 {
+    padding: 38.4px 19px 33.6px 19px;
+    font-weight: bold;
+}
+.cont5 span {
+    color: #0052D9;
+    cursor:pointer;
+}
+.cont6 {
+    width: 904px;
+    height: 84px;
+    margin: 40px 0 0 0;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #666666;
+    text-align: justify;
+    line-height: 28px;
+}
+.end {
+    padding-top: 100px;
+    height: 200px;
+    text-align: center;
+}
+.Txlogo {
+    color: #5F6368;
+    font-weight: bold;
+}
+.cop {
+    margin-top: 22px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #3C4043;
+    letter-spacing: 0;
+    text-align: center;
+}
+.Ten {
+    color: #5F6368;
+}
+.seach {
+    position: relative;
+}
+.item-seach img {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+}
+td:first-child {
+    padding: 0 12.8px;
+}
+.mian {
+    margin: 58px 0 0 208px;
+    z-index: -1;
+    padding-top: 46px;
+    padding-bottom: 150px;
+}
+.click1 {
+    font-weight: bold;
+}
+.foot{
+    width: 100%;
+    border-top: 1px solid #E5E9EB;
+}
+.togg{
+    position: relative;
+    display: inline-block;
+}
+.togg span{
+    margin-left: 20px;
+}
+.shop1{
+    transform:rotate(180deg);
+}

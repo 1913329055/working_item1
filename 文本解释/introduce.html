@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/introduce.css">
+    <link rel="stylesheet" href="./css/currency.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-centent">
+            <div class="logo">
+                <a href="#"><i>Tencent Texsmart</i></a>
+            </div>
+            <div class="top-menu">
+                <ul>
+                    <li><a href="index.html">文本理解</a></li>
+                    <li class="product">产品介绍</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2 class="instrution">使用说明</h2>
+            <div class="seach">
+                <i class="item-seach"><img src="./images/放大镜.png" alt=""></i>
+                <input type="text">
+            </div>
+            <div class="hidden-scroll">
+                <ul class="menu">
+                    <li class="menu-li">
+                        <div class="list-name1">一、总体介绍</div>
+                        <li class="menu-li">
+                            <div class="list-name"><a href="explain.html">二、系统说明</a></div>
+                        </li>
+                        <li class="menu-li">
+                            <div class="togg">
+                                <div class="list-name">三、功能点介绍</div>
+                                <span><img class="shop1" src="./images/_.png"></span>
+                            </div>
+                            <ul class="second-menu">
+                                <li class="active">1.分词</li>
+                                <li class="active">2.词性标注</li>
+                                <li class="active">3.命名实体识别（NER）</li>
+                                <li class="active">4.函数识别</li>
+                                <li class="active">5.句法分析</li>
+                                <li class="active">6.语义角色标注</li>
+                            </ul>
+                        </li>
+                        <li class="menu-li">
+                            <div class="list-name">五、性能分析</div>
+                        </li>
+                        <li class="menu-li">
+                            <div class="list-name">六、致谢</div>
+                        </li>
+                        <li class="menu-li">
+                            <div class="list-name">七、联系方式</div>
+                        </li>
+                        <li class="menu-li">
+                            <div class="list-name">四、API使用</div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mian">
+            <div class="sum">
+                <div class="date-choice-list">一、总体介绍</div>
+            </div>
+            <div class="cont1">
+                <span>
+                        TexSmart是由腾讯AI Lab构建的一个文本理解系统，提供分词、词性标注、命名实体识别（NER）、语义联想等基础自然语言理解功能。与现有的开源自然语言理解工具相比，其主要特色如下：<span>1）细粒度命名实体识别（NER）：支持上千种实体类型；而目前多数公开的工具只支持人、地点、机构等几种或者十几种（粗粒度）实体类型。<br />2）语义分析功能的增强：提供上下文相关的语义联想功能，并对特定类型的实体（如数值和时间）给出结构化的深度语义表示。<br />3）为大规模工业化使用而设计：算法选型在精度、速度、硬件开销之间进行综合权衡；提升对新词和生僻词的覆盖率等。</span><span>下面图1和图2是现有开源文本理解工具与TexSmart在一个示例中文句子上的对比。输入文本为：</span>
+                </span>
+            </div>
+            <div class="cont2">
+                <span>
+                        “上个月30号，南昌王先生在自己家里边看流浪地球边吃煲仔饭”
+                    </span>
+            </div>
+            <div class="cont3">
+                <span>传统文本理解工具的命名实体识别（NER）的结果：</span>
+            </div>
+            <div class="NER">
+                <table style="width: 374px;">
+                    <thead>
+                        <tr>
+                            <td style="background: url('./images/矩形备份 10.png ');">序号</td>
+                            <td style="background: url('./images/矩形备份 12.png ');">实体</td>
+                            <td style="background: url('./images/矩形备份 16.png ');">类型id</td>
+                            <td style="background: url('./images/矩形备份 20.png ');">类型名</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>南昌</td>
+                            <td>loc.generic</td>
+                            <td>地方</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>王先生</td>
+                            <td>person.generic</td>
+                            <td>人</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cont4">
+                <span>
+                        TexSmart语义解析的结果 (截图时间：2019年12月)：</span>
+            </div>
+            <div class="TexSmart">
+                <div class="cont5"><span>上个月30号 ，南昌 王先生</span>在自己家里边看<span>流浪地球</span>边吃<span>煲仔饭</span> </span>
+                </div>
+                <div class="NER pad">
+                    <table style="width: 668.8px;">
+                        <thead>
+                            <tr>
+                                <td style="background: url('./images/矩形备份 10.png ');">序号</td>
+                                <td style="background: url('./images/矩形备份 12.png ');">实体</td>
+                                <td style="background: url('./images/矩形备份 16.png ');">类型id</td>
+                                <td style="background: url('./images/矩形备份 20.png ');">类型名</td>
+                                <td style="background: url('./images/矩形备份 20.png ');">类型名</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>上个月30号</td>
+                                <td>time.generic</td>
+                                <td>时间</td>
+                                <td>{"value":[,11,30]}</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>南昌</td>
+                                <td>loc.city</td>
+                                <td>城市</td>
+                                <td>{"uri":"e30f8bc5-f7cb-4f03-967e-8b0cd6a75342","related":["上海","北京","天津","深圳","成都","杭州","南京","西安","香港","福州"]}</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>王先生</td>
+                                <td>person.generic</td>
+                                <td>人</td>
+                                <td>{"uri":"faa00cba-d4d8-4679-98d4-ad39e807573a","related":["李女士","王女士","吴女士","周女士","张女士","刘女士","陈女士","张先生","刘先生","杨女士"]}</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>流浪地球</td>
+                                <td>work.movie</td>
+                                <td>电影</td>
+                                <td style="width: 295.2px;">{"uri":"eacb9e2c-cb60-45c9-babc-67bfe8bd269a","related":["追龙2","x战警:黑凤凰","哥斯拉2","反贪风暴4","雷霆沙赞","复仇者联盟4:终局之战","蜘蛛侠:英雄远征","大侦探皮卡丘","复仇者联盟4","少年的你"]}</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>煲仔饭</td>
+                                <td>food.generic</td>
+                                <td>食物</td>
+                                <td>{"related":["麻辣烫","火锅","酸辣粉","螺蛳粉","热干面","重庆火锅","过桥米线","烧烤","麻辣香锅","煎饼果子"]}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="cont6">
+                <span>此对比省去了结果比较类似的分词和词性标注结果，只保留双方差别比较明显的语义分析部分。可以看到，TexSmart识别了更多类型的实体（如电影、食物等），支持更细粒度的实体类型标注（如把"南昌"的类型从"地点"细化为"城市"），并且为实体附加了更多的语义信息（如相关实体、深度语义表示等）。</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <div class="end">
+            <span class="Txlogo"><i>Tencent腾讯</i></span>
+            <span style="margin: 0 24px;">|</span>
+            <span class="Ten">Tencent Ai Lar</span>
+            <p style="height: 22px;"></p>
+            <span class="cop">Copyright © 1998 - 2018 Tencent. All Rights Reserved.</span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/jquery-3.4.1.js"></script>
+<script>
+    $(".togg").click(function() {
+        $(".second-menu").slideToggle()
+        $(".togg span img").toggleClass("shop1");
+    })
+</script>

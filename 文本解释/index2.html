@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/currency.css">
+    <link rel="stylesheet" href="./css/index1.css">
+    <link rel="stylesheet" href="./css/analysis.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><i>Tencent Texsmart</i></a>
+            </div>
+            <div class="top-menu">
+                <ul>
+                    <li class="product"><a href="index.html">文本理解</a></li>
+                    <li><a href="introduce.html">产品介绍</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mian">
+            <div class="mian-body">
+                <div class="mian-title">腾讯文本理解服务</div>
+
+                <div class="search-box">
+                    <div class="text-box">
+                        <div class="search-left">
+                            <input class="search-text" placeholder="请输入要解析的文本" value="123">
+                            <div class="box1">
+                                <div class="dropdown sel">
+                                    <div class="dropdown-centent">
+                                        <div class="input_select">中文</div>
+                                        <span><img src="./images/xia.png"></span>
+                                    </div>
+                                    <ul class="language language1">
+                                        <li><a href="###" rel="2">中文</a></li>
+                                        <li><a href="###" rel="3">英文</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <span><img src="./images/编组 3.png"></span>
+                    </div>
+                    <button class="search-btn" style="background-color: #0052D9;">开始解析</button>
+                </div>
+                <div class="load">
+                    <div class="load1 sk-wave">
+                        <div class="sk-rect sk-rect-1"></div>
+                        <div class="sk-rect sk-rect-2"></div>
+                        <div class="sk-rect sk-rect-3"></div>
+                        <div class="sk-rect sk-rect-4"></div>
+                        <div class="sk-rect sk-rect-5"></div>
+                        <div class="sk-rect sk-rect-6"></div>
+                    </div>
+                    <div class="load2">0</div>
+                </div>
+            </div>
+            <div class="card" style="display: none;">
+                <div class="card-content">
+                    <div class="card-box">
+                        <div class="card-text">分词&词性标注：</div>
+                        <div class="box3">
+                            <div>词性集：</div>
+                            <div class="dropdown dropdown1">
+                                <div class="dropdown-centent">
+                                    <div class="input_select">CTB</div>
+                                    <span><img src="./images/_.png"></span>
+                                </div>
+                                <ul class="language">
+                                    <li><a href="###" rel="2">CTB</a></li>
+                                    <li><a href="###" rel="3">扩展北大</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-toggle">
+                        <div class="basics fus">
+                            <div class="basics-title">基础粒度：</div>
+                            <div class="basics-list">
+                                <div class="basics-item">今天<span>NT</span></div>
+                                <div class="basics-item">泰安<span>NR</span></div>
+                                <div class="basics-item">天气<span>NN</span></div>
+                                <div class="basics-item">如何<span>AD</span></div>
+                                <div class="basics-item">?<span>PU</span></div>
+                                <div class="basics-item">我<span>PN</span></div>
+                                <div class="basics-item">想<span>VV</span></div>
+                                <div class="basics-item">爬<span>VV</span></div>
+                                <div class="basics-item">泰山<span>NR</span></div>
+                            </div>
+                        </div>
+                        <div class="basics">
+                            <div class="basics-title">复合粒度：</div>
+                            <div class="basics-list">
+                                <div class="basics-item">今天<span>NT</span></div>
+                                <div class="basics-item">泰安<span>NR</span></div>
+                                <div class="basics-item">?<span>PU</span></div>
+                                <div class="basics-item">天气<span>NN</span></div>
+                                <div class="basics-item">如何<span>AD</span></div>
+                                <div class="basics-item">我<span>PN</span></div>
+                                <div class="basics-item">想<span>VV</span></div>
+                                <div class="basics-item">爬<span>VV</span></div>
+                                <div class="basics-item">泰山<span>NR</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="away"><img src="./images/编组.png"><span class="click">收起</span></div>
+                    <!-- <div class="away1"><img src="./assets/编组.png"><span class="click">更多</span></div> -->
+                </div>
+                <div class="card-content">
+                    <div class="card-box">
+                        <div class="card-text">命名实体识别：</div>
+                        <div class="box3">
+                            <div>粒度：</div>
+                            <div class="dropdown dropdown2">
+                                <div class="dropdown-centent">
+                                    <div class="input_select">细粒度NER</div>
+                                    <span><img src="./images/_.png"></span>
+                                </div>
+                                <ul class="language">
+                                    <li><a href="###" rel="2">细粒度NER</a></li>
+                                    <li><a href="###" rel="3">扩展北大</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-toggle">
+                        <div class="cont5"><span>今天<span>1</span></span><span>泰安<span>2</span></span>天气如何？我想去爬<span>泰山<span>3</span></span>
+                        </div>
+                        <div class="NER pad">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td style="width: 111px; ">实体</td>
+                                        <td style="width: 171px; ">类型id</td>
+                                        <td style="width: 110px; ">类型名</td>
+                                        <td style="width: 369px;">语义</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="NER-center">1</td>
+                                        <td class="NER-left">今天</td>
+                                        <td class="NER-left">time.generic</td>
+                                        <td class="NER-left">时间</td>
+                                        <td>{"value":[,11,30]}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="NER-center">2</td>
+                                        <td class="NER-left">泰安</td>
+                                        <td class="NER-left">loc.city</td>
+                                        <td class="NER-left">城市</td>
+                                        <td>{"uri":"7c80cc38-e7c1-40e8-ae26-dcff33fb1fd1","related":["青岛","烟台","济南","潍坊","威海","淄博","南京","杭州","上海","武汉"]}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="NER-center">3</td>
+                                        <td class="NER-left">泰山</td>
+                                        <td class="NER-left">loc.generic</td>
+                                        <td class="NER-left">地点</td>
+                                        <td>{"uri":"09e2f4a0-fd08-435e-8e28-c475d42cffa9","related":["庐山","黄山","武夷山","张家界","九寨沟","九华山","上海","景德镇","普陀山","南昌"]}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="away"><img src="./images/编组.png"><span class="click">收起</span></div>
+                    <!-- <div class="away1"><img src="./assets/编组.png"><span class="click">更多</span></div> -->
+                </div>
+                <div class="card-content">
+                    <div class="card-box">
+                        <div class="card-text">函数识别：</div>
+                    </div>
+                    <div class="card-toggle">
+                        <div class="NER pad">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td style="width: 228px; ">实体</td>
+                                        <td>语义</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="NER-center">1</td>
+                                        <td class="NER-left">fn.q.weather</td>
+                                        <td class="label">
+                                            arg.time：今天</br>
+                                            arg.location：泰安</br>
+                                            arg.relation_word：天气如何</br>
+                                            arg.relation_word：爬</br>
+                                            arg.location：泰山</br>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="away"><img src="./images/编组.png"><span class="click">收起</span></div>
+                    <!-- <div class="away1"><img src="./assets/编组.png"><span class="click">更多</span></div> -->
+                </div>
+                <div class="card-content">
+                    <div class="card-box">
+                        <div class="card-text">句法分析：</div>
+                    </div>
+                    <div class="card-toggle">
+                        <div class="box-pic"></div>
+                    </div>
+                    <div class="away"><img src="./images/编组.png"><span class="click">收起</span></div>
+                    <!-- <div class="away1"><img src="./assets/编组.png"><span class="click">更多</span></div> -->
+                </div>
+                <div class="card-content">
+                    <div class="card-box">
+                        <div class="card-text">语义角色标注：</div>
+                    </div>
+                    <div class="card-toggle">
+                        <div class="cont5"><span>今天<span>1</span></span><span>泰安<span>2</span></span>天气如何？我想去爬<span>泰山<span>3</span></span>
+                        </div>
+                        <div class="NER pad">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td style="width: 132px; ">谓语</td>
+                                        <td>语义角色标签</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="NER-center">1</td>
+                                        <td class="NER-left">想</td>
+                                        <td>
+                                            ARG0：我</br>
+                                            ARG1：去爬泰山</br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="NER-center">2</td>
+                                        <td class="NER-left">去</td>
+                                        <td>ARG0：我</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="NER-center">3</td>
+                                        <td class="NER-left">爬</td>
+                                        <td>ARG1：泰山</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="away"><img src="./images/编组.png"><span class="click">收起</span></div>
+                    <!-- <div class="away1"><img src="./assets/编组.png"><span class="click">更多</span></div> -->
+                </div>
+            </div>
+        </div>
+        <p style="width: 100%; height: 1px; background-color: #E5E9EB;"></p>
+        <div class="end">
+            <span class="Txlogo"><i>Tencent腾讯</i></span>
+            <span style="margin: 0 24px;">|</span>
+            <span class="Ten">Tencent Ai Lar</span>
+            <p style="height: 22px;"></p>
+            <span class="cop">Copyright © 1998 - 2018 Tencent. All Rights Reserved.</span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var v = 0;
+        b()
+
+        function b() {
+            // v =(v-0)+(1-0);
+            var a = setInterval(function() {
+                // console.log(v)
+                if (v > 99) {
+                    clearInterval(a);
+                    $('.load').css('display', 'none')
+                    $('.card').css('display', 'block')
+                } else {
+                    v = v + (1 - 0);
+                    console.log(v)
+                    $(".load2").text(v + "%");
+                }
+            }, 10)
+        }
+    })
+    $(function()   {          
+        var  index  =  1;            
+        var   card   =   document.querySelector(".card");        
+        $(".away").each(function()  {            
+            $(this).click (function ()   {                    
+                $(this).siblings('.card-toggle').slideToggle();                 /*$(".away1").css("display", "black");*/                 
+                $(this).html('');               
+                if  (index  ==  1)  {                    
+                    index  =  0;
+                    $(this).append("<img  src='./images/编组.png' style = 'transform:rotate(360deg);'>");
+                    $(this).append("<span class = 'click'>更多</span>");
+
+                                    
+                } 
+                else  if  (index  ==  0)  {                    
+                    index  =  1;                    
+                    $(this).append("<img src='./images/编组.png'>");
+                    $(this).append("<span  class = 'click' >收起</span>");                
+                }             
+            });        
+        });
+        $(function() {
+            $(".dropdown1 .dropdown-centent").on("click", function() {
+                $(this).siblings('.language').slideToggle();
+                $(".dropdown1 .dropdown-centent span img").toggleClass("shop");
+            })
+            $(".dropdown1 ul li a").click(function() {
+                var txt = $(this).html();
+                $(".dropdown1 .input_select").html(txt);
+                $(".dropdown1 ul").hide();
+                $(".result").html("您选择了" + txt + "，值为：");
+            });
+            $(".dropdown2 .dropdown-centent").on("click", function() {
+                $(this).siblings('.language').slideToggle();
+                $(".dropdown2 .dropdown-centent span img").toggleClass("shop");
+            })
+            $(".dropdown2 ul li a").click(function() {
+                var txt = $(this).html();
+                $(".dropdown2 .input_select").html(txt);
+                $(".dropdown2 ul").hide();
+                $(".result").html("您选择了" + txt + "，值为：");
+            });
+            $(".sel .dropdown-centent").on("click", function() {
+                $(this).siblings('.language').slideToggle();
+                $(".sel .dropdown-centent span img").toggleClass("shop");
+            })
+            $(".sel ul li a").click(function() {
+                var txt = $(this).html();
+                $(".sel .input_select").html(txt);
+                $(".sel ul").hide();
+                $(".result").html("您选择了" + txt + "，值为：");
+            });
+        });
+        $(function() {
+            $(document).bind("click", function(e) {
+                if ($(e.target).closest(".input_select").length > 0) {} else {
+                    $(".language").hide();
+                    $(".dropdown-centent span img").removeClass('shop');
+                }
+            });
+        });
+        // $(function(){
+        //     $(".top-menu ul li").click(function(){
+        //         $(this).addClass("product");
+        //         $(this).siblings().removeClass("product");
+        //     })
+        // })
+
+            
+    })
+</script>

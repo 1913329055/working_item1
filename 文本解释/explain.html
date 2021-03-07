@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/explain.css">
+    <link rel="stylesheet" href="./css/currency.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-centent">
+            <div class="logo">
+                <a href="#"><i>Tencent Texsmart</i></a>
+            </div>
+            <div class="top-menu">
+                <ul>
+                    <li><a href="index.html">文本理解</a></li>
+                    <li class="product">产品介绍</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2 class="instrution">使用说明</h2>
+            <div class="seach">
+                <i class="item-seach"><img src="./images/放大镜.png" alt=""></i>
+                <input type="text">
+            </div>
+            <div class="hidden-scroll">
+                <ul class="menu">
+                    <li class="menu-li">
+                        <div class="list-name"><a href="introduce.html">一、总体介绍</a></div>
+                        <li class="menu-li">
+                            <div class="list-name1">二、系统说明</div>
+                        </li>
+                        <li class="menu-li">
+                            <div class="togg">
+                                <div class="list-name">三、功能点介绍</div>
+                                <span><img class="shop1" src="./images/_.png"></span>
+                            </div>
+                            <ul class="second-menu">
+                                <li class="active">1.分词</li>
+                                <li class="active">2.词性标注</li>
+                                <li class="active">3.命名实体识别（NER）</li>
+                                <li class="active">4.函数识别</li>
+                                <li class="active">5.句法分析</li>
+                                <li class="active">6.语义角色标注</li>
+                            </ul>
+                        </li>
+                        <li class="menu-li">
+                            <div class="list-name">五、性能分析</div>
+                        </li>
+                        <li class="menu-li">
+                            <div class="list-name">六、致谢</div>
+                        </li>
+                        <li class="menu-li">
+                            <div class="list-name">七、联系方式</div>
+                        </li>
+                        <li class="menu-li">
+                            <div class="list-name">四、API使用</div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mian">
+            <div class="sum">
+                <div class="date-choice-list">二、系统说明</div>
+            </div>
+            <div class="cont1">
+                <span>
+                    系统对外提供 工具包（SDK）和 Http在线服务 两种形态。两种形态的对比如下：
+                </span>
+            </div>
+            <div class="cont2">
+                <table>
+                    <thead>
+                        <tr style="height: 43.2px;">
+                            <td></td>
+                            <td>离线工具包</td>
+                            <td>Http在线服务</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 97px">
+                            <td>功能</td>
+                            <td class="lb1">分词、词性标注、实体识别（普通和细粒度）、语义联想、深度语义表达</td>
+                            <td class="lb2">分词、词性标注、成份句法分析、语义角色标注、实体识别（普通和细粒度）、实体链接、语义联想、深度语义表达</td>
+                        </tr>
+                        <tr>
+                            <td>知识库大小</td>
+                            <td>小</td>
+                            <td>大</td>
+                        </tr>
+                        <tr>
+                            <td>能够处理的 语言
+                            </td>
+                            <td>中文、英文</td>
+                            <td>中文、英文</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cont3">
+                <span>
+                    Http在线服务可以在各种操作系统上用各种编程语言来调用。离线开发工具包的适用范围如下：<p></p>
+    操作系统：Linux、Windows (计划下一版本增加对Mac系统的支持)<p></p>
+    编程语言：C、C++、Python (Python 2 and 3)、Java (最低版本要求1.6.0)<p></p>
+    换言之，离线SDK支持在Linux和Windows两个平台上用C、C++、Python、Java四种编程语言来调用。<p class="p1"></p>
+    
+    系统要求：<p></p>
+    Linux: 64位（查看: uname -m）；glibc版本>=2.14 (查看glibc版本: ldd --version)<p></p>
+    Windows: 64位；
+    
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bc">
+        <p style="width: 100%; height: 1px; background-color: #E5E9EB;"></p>
+        <div class="end">
+            <span class="Txlogo"><i>Tencent腾讯</i></span>
+            <span style="margin: 0 24px;">|</span>
+            <span class="Ten">Tencent Ai Lar</span>
+            <p style="height: 22px;"></p>
+            <span class="cop">Copyright © 1998 - 2018 Tencent. All Rights Reserved.</span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/jquery-3.4.1.js"></script>
+<script>
+    $(".togg").click(function() {
+        $(".second-menu").slideToggle()
+        $(".togg span img").toggleClass("shop1");
+    })
+</script>

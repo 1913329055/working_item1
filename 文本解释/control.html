@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/control.css">
+</head>
+<body>
+    <div class="content">
+        <table class="tab">
+            <caption class="hover">按钮hover:</caption>
+            <tbody>
+                <tr>
+                    <td><button class="btn">开始解析</button></td>
+                    <td><img src="./images/编组 3.png"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="tab">
+            <caption class="hover">下拉框展示:</caption>
+            <tbody>
+                <tr>
+                    <td class="down-box">
+                        <div class="box1">
+                            <div class="dropdown sel">
+                                <div class="dropdown-centent">
+                                    <div class="input_select">中文</div>
+                                    <span><img src="./images/xia.png"></span>
+                                </div>
+                                <ul class="language">
+                                    <li><a href="###" rel="2">中文</a></li>
+                                    <li><a href="###" rel="3">英文</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box2">
+                            <div>词性集：</div>
+                            <div class="dropdown dropdown1">
+                                <div class="dropdown-centent">
+                                    <div class="input_select">CTB</div>
+                                    <span><img src="./images/_.png"></span>
+                                </div>
+                                <ul class="language">
+                                    <li><a href="###" rel="2">CTB</a></li>
+                                    <li><a href="###" rel="3">扩展北大</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="tab">
+            <caption class="hover">卡片收起:</caption>
+            <tbody>
+                <tr>
+                    <td>
+                        <div></div>
+                        <div class="card-content">
+                            <div class="card-box">
+                                <div class="card-text">分词&词性标注：</div>
+                                <div class="box3">
+                                    <div>词性集：</div>
+                                    <div class="dropdown dropdown2">
+                                        <div class="dropdown-centent">
+                                            <div class="input_select">CTB</div>
+                                            <span><img src="./images/_.png"></span>
+                                        </div>
+                                        <ul class="language">
+                                            <li><a href="###" rel="2">CTB</a></li>
+                                            <li><a href="###" rel="3">扩展北大</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-toggle">
+                                <div class="basics fus">
+                                    <div class="basics-title">基础粒度：</div>
+                                    <div class="basics-list">
+                                        <div class="basics-item">今天<span>NT</span></div>
+                                        <div class="basics-item">泰安<span>NR</span></div>
+                                        <div class="basics-item">天气<span>NN</span></div>
+                                        <div class="basics-item">如何<span>AD</span></div>
+                                        <div class="basics-item">?<span>PU</span></div>
+                                        <div class="basics-item">我<span>PN</span></div>
+                                        <div class="basics-item">想<span>VV</span></div>
+                                        <div class="basics-item">爬<span>VV</span></div>
+                                        <div class="basics-item">泰山<span>NR</span></div>
+                                    </div>
+                                </div>
+                                <div class="basics">
+                                    <div class="basics-title">复合粒度：</div>
+                                    <div class="basics-list">
+                                        <div class="basics-item">今天<span>NT</span></div>
+                                        <div class="basics-item">泰安<span>NR</span></div>
+                                        <div class="basics-item">?<span>PU</span></div>
+                                        <div class="basics-item">天气<span>NN</span></div>
+                                        <div class="basics-item">如何<span>AD</span></div>
+                                        <div class="basics-item">我<span>PN</span></div>
+                                        <div class="basics-item">想<span>VV</span></div>
+                                        <div class="basics-item">爬<span>VV</span></div>
+                                        <div class="basics-item">泰山<span>NR</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="away"><img src="./images/编组.png"><span class="click">收起</span></div>
+                            <!-- <div class="away1"><img src="./assets/编组.png"><span class="click">更多</span></div> -->
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script src="./js/jquery-3.4.1.js"></script>
+<script>
+    $(function()  {  
+        var index = 1;    
+        var  card  =  document.querySelector(".card");
+        $(".away").each(function() {
+            $(this).click (function ()  {    
+                $(this).siblings('.card-toggle').slideToggle();
+                /*$(".away1").css("display", "black");*/
+                $(this).html('');
+               if (index == 1) {
+                    index = 0;
+				$(this).append("<img  src='./images/编组.png' style = 'transform:rotate(360deg);'>");
+				$(this).append("<span class = 'click'>更多</span>");
+
+                } else if (index == 0) {
+                    index = 1;
+                    $(this).append("<img src='./images/编组.png'>");
+				    $(this).append("<span  class = 'click' >收起</span>");
+                } 
+            });
+        });
+        $(function () {
+                $(".dropdown1 .dropdown-centent").on("click",function(){
+                    $(this).siblings('.language').slideToggle();
+                    $(".dropdown1 .dropdown-centent span img").toggleClass("shop");
+                })
+                $(".dropdown1 ul li a").click(function () {
+                    var txt = $(this).html();
+                    $(".dropdown1 .input_select").html(txt);
+                    $(".dropdown1 ul").hide();
+                    $(".result").html("您选择了" + txt + "，值为：");
+                });
+                $(".dropdown2 .dropdown-centent").on("click",function(){
+                    $(this).siblings('.language').slideToggle();
+                    $(".dropdown2 .dropdown-centent span img").toggleClass("shop");
+                })
+                $(".dropdown2 ul li a").click(function () {
+                    var txt = $(this).html();
+                    $(".dropdown2 .input_select").html(txt);
+                    $(".dropdown2 ul").hide();
+                    $(".result").html("您选择了" + txt + "，值为：");
+                });
+                $(".sel .dropdown-centent").on("click",function(){
+                    $(this).siblings('.language').slideToggle();
+                    $(".sel .dropdown-centent span img").toggleClass("shop");
+                })
+                $(".sel ul li a").click(function () {
+                    var txt = $(this).html();
+                    $(".sel .input_select").html(txt);
+                    $(".sel ul").hide();
+                    $(".result").html("您选择了" + txt + "，值为：");
+                });
+            }); 
+            $(function(){
+                $(document).bind("click", function (e) {
+                    if($(e.target).closest(".input_select").length>0){
+                        }else{        
+                    $(".language").hide();
+                    $(".dropdown-centent span img").removeClass('shop');   
+                    }
+                    });
+            });
+    });
+</script>

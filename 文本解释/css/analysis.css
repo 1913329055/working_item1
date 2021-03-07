@@ -1,0 +1,361 @@
+.card{
+    margin-top: 120px;
+}
+.card-content{
+    width: 884px;
+    /* height: 520px; */
+    background: #FFFFFF;
+    border: 1px solid #E5E9EB;
+    box-shadow: 0 6px 20px 0 rgba(94,139,231,0.09);
+    border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+    margin: 40px auto 0;
+}
+.card-text{
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #4A4A4A;
+    letter-spacing: 0.31px;
+    text-align: center;
+    padding-left: 20px;
+    margin: 24px 0 24px -1px;
+    border-left: 2px solid  #ccdcf7;
+    position: relative;
+    float: left;
+}
+.card-box{
+    height: 76px;
+    border-bottom: 1px solid #E5E9EB;
+}
+.more{
+    width: 60px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #5F6368;
+}
+.more span{
+    width: 11px;
+    height: 11px;
+    vertical-align:middle;
+    background-image: url(../assets/编组.png);
+    background-size: 100%;
+}
+.box3 {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin: 18px 20px 18px 0;
+}
+ul li{
+    list-style: none;
+}
+.box3 div{
+    display: inline-block;
+}
+.input_select {
+    width: 108px;
+    height: 38px;
+    line-height: 38px;
+    /* background: #0052d9; */
+    color: #545454;
+    text-align: left;
+    border: 1px solid #e6eaec;
+    border-radius: 3px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #4A4A4A;
+    letter-spacing: 0.25px;
+    padding-left: 10px;
+}
+.dropdown2 .input_select{
+    width: 115px;
+}
+.dropdown2 .input_select span{
+    padding-right: 0;
+}
+.dropdown-centent span{
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+    transform: translateY(-45%);
+    top: 50%;
+    padding-right: 10px;
+}
+.input_select a {
+    display: block;
+    height: 19px;
+    color: #807a62;
+    text-decoration: none;
+}
+.input_select img {
+    margin-left: 4px;
+    margin-bottom: -4px;
+    width: 16px;
+    height: 16px;
+}
+.dropdown ul {
+    width: 118px;
+    /* background: #e8f5fe; */
+    margin-top: -1px;
+    position: absolute;
+    display: none;
+    border: 1px solid #a9c9e2;
+    margin-top: 3px;
+}
+.language1{
+    width: 125px;
+}
+.dropdown ul li {
+height: 116px;
+height: 38px;
+line-height: 38px;
+text-indent: 10px;
+
+}
+.dropdown ul li a {
+     display: block;
+     color: #807a62;
+     height: 116px;
+     height: 38px;
+     text-decoration: none;
+}
+.dropdown ul li a:hover {
+      background: #f3f6fd;
+      color: #0c5bdb;
+ }
+.result {
+ margin-top: 10px;
+ text-align: center;
+}
+.sel1{
+    width: 118px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #E5E9EB;
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none;
+    color: #4A4A4A;
+}
+.cont5 {
+    padding: 30px 19px 0 19px;
+    font-weight: bold;
+}
+.cont5 span {
+    color: #0052D9;
+}
+.cont5 span span{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    letter-spacing: 0.19px;
+    vertical-align:super;
+}
+
+.NER table {
+    border: 1px #E8F0FF solid;
+    border-collapse: collapse;
+    box-shadow: 0 1px 4px 0 #E5E9EB;
+    overflow: hidden;
+    width: 90%;
+    margin: 40px auto 0;
+}
+.NER table thead {
+    opacity: 0.65;
+    background: #E8F0FF;
+    box-shadow: inset -1px 0 0 0 #D8E1FD;
+}
+.NER table thead td {
+    border-right: 1px solid #e1e8fe;
+}
+.NER tbody td:last-child {
+    padding: 12.8px 12.8px;
+    text-align: left;
+}
+.NER thead td:last-child {
+    background: #F1F6FF;
+    text-align: left;
+    padding-left: 10px;
+}
+.NER tbody tr{
+    border-bottom: 1px solid #E8EEFF;
+}
+.NER thead tr td{
+    background: #F1F6FF;
+    text-align: left;
+    padding-left: 16px;
+}
+.NER {
+    margin-bottom: 48.5px;
+}
+.NER table thead td:first-child{
+    text-align: center;
+    width: 75px;
+    height: 54px;
+    line-height: 54px;
+    padding: unset;
+}
+.NER-center{
+    text-align: center;
+    padding: unset;
+}
+.NER-left{
+    padding-left: 16px;
+}
+.box-pic{
+    width: 836px;
+    height: 375px;
+    background: url(../images/Cutaway.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 40px auto 0;
+}
+.label{
+    text-align: left;
+}
+.basics{
+    width: 836px;
+    height: 88px;
+    margin: 40px auto 0;
+}
+.basics-title{
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #4A4A4A;
+    letter-spacing: 0.25px;
+}
+.basics-list{
+    width: 836px;
+    height: 32px;
+    margin-top: 24px;
+    position: relative;
+}
+.fus{
+    border-bottom: 1px solid #e5e9eb;
+    padding-bottom: 37px;
+}
+.basics-item{
+    height: 32px;
+    border-radius: 4px;
+    background-color: #e8f0fd;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 16px;
+    display: inline-block;
+    padding: 0 7px;
+    cursor:pointer;
+}
+.basics-item span{
+    height: 100%;
+    border-left: 1px solid #fff;
+    font-size: 14px;
+    color: #0052D9;
+    padding: 7px 0 6px 5px;
+    margin-left: 7px;
+}
+.away{
+    width: 60px;
+    height: 24px;
+    margin: 26px auto 18px;
+    text-align: center;
+    line-height: 24px;
+    cursor:pointer;
+}
+.away img{
+    vertical-align: middle;
+    transform: rotate(180deg);
+    margin-right: 8px;
+}
+.away span{
+    font-size: 14px;
+    color: #5F6368;
+    opacity: 0.5;
+}
+.away1{
+    width: 60px;
+    height: 24px;
+    margin: 26px auto 18px;
+    text-align: center;
+    line-height: 24px;
+    cursor:pointer;
+}
+.away1 img{
+    vertical-align: middle;
+    transform: rotate(360deg);
+    margin-right: 8px;
+}
+.away1 span{
+    font-size: 14px;
+    color: #5F6368;
+    opacity: 0.5;
+}
+.end {
+    padding-top: 100px;
+    height: 200px;
+    text-align: center;
+}
+
+.Txlogo {
+    color: #5F6368;
+    font-weight: bold;
+}
+
+.cop {
+    margin-top: 22px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #3C4043;
+    letter-spacing: 0;
+    text-align: center;
+}
+.search-left{
+    width: 729px;
+    position: relative;
+    height: 54px;
+}
+.shop{
+    transform:rotate(180deg);
+}
+.sel {
+    width: 79px;
+}
+.sel .dropdown-centent span{
+    padding-right: 0px;
+    margin-right:12px;
+}
+.sel ul {
+    width: 79px;
+    /* background: #e8f5fe; */
+    margin-top: -1px;
+    position: absolute;
+    display: none;
+    border: 1px solid #a9c9e2;
+    margin-top: 3px;
+}
+.sel .input_select{
+    width: 79px;
+    border: none;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #0052d9;
+    letter-spacing: 0.25px;
+}
+.sel ul li {
+    height: 116px;
+    height: 38px;
+    line-height: 38px;
+    text-indent: 10px;
+}
+.sel ul li a {
+    display: block;
+    color: #807a62;
+    height: 116px;
+    height: 38px;
+    text-decoration: none;
+}
+.sel ul li a:hover {
+      background: #f3f6fd;
+      color: #0c5bdb;
+}

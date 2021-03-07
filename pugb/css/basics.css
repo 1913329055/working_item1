@@ -1,0 +1,1324 @@
+/* reset */
+
+body,
+div,
+p,
+ul,
+li,
+table,
+tbody,
+tr,
+td,
+textarea,
+form,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+dl,
+dt,
+dd,
+img,
+iframe,
+header,
+nav,
+section,
+article,
+footer,
+figure,
+figcaption,
+menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: arial, Helvetica;
+    font-size: 12px;
+    -webkit-text-size-adjust: none;
+}
+
+header,
+nav,
+section,
+article,
+footer,
+figure,
+figcaption {
+    display: block;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+li,
+ul,
+[onclick] {
+    -webkit-tap-highlight-color: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+table,
+td,
+tr {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+em,
+strong,
+i {
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.c:before,
+.c:after {
+    content: "";
+    display: table;
+}
+
+.c:after {
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+img {
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+.db {
+    display: block;
+    text-indent: -999em;
+}
+
+input {
+    box-shadow: none;
+    /*去除阴影*/
+    outline: none;
+    /*聚焦input的蓝色边框*/
+    resize: none;
+    /*textarea 禁止拖拽*/
+    border: none;
+    /*去除边框*/
+    border-radius: 0px;
+    -webkit-appearance: none;
+    /*常用于IOS下移除原生样式*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /*点击高亮的颜色*/
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    -webkit-touch-callout: none;
+    /*系统默认菜单被禁用*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -khtml-user-select: none;
+    /*早起浏览器*/
+    -moz-user-select: none;
+    /*火狐浏览器*/
+    -ms-user-select: none;
+    /*IE浏览器*/
+    user-select: none;
+    /*用户是否能够选中文本*/
+}
+
+
+/*font*/
+
+@font-face {
+    font-family: 'Teko';
+    src: url('../font/TEKO.TTF');
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif, 'PingFang SC', 'microsoft yahei';
+}
+
+/*header*/
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100px;
+    z-index: 999;
+}
+
+.pubg_logo {
+    width: 72px;
+    height: 74px;
+    float: left;
+    margin: 14px 35px 0px 0px;
+}
+
+.midasbuy_logo {
+    float: left;
+    width: 145px;
+    height: 47px;
+    margin-top: 27px;
+}
+
+.pubg_logo,
+.midasbuy_logo {
+    position: relative;
+}
+
+.pubg_logo img,
+.midasbuy_logo img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.logo {
+    position: relative;
+    float: left;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}
+
+/* .logo:nth-child(1) {
+    margin-right: 35px;
+} */
+
+.logo a {
+    display: block;
+}
+
+.width_auto {
+    height: 50px;
+    margin-top: 25px;
+}
+
+.height_auto {
+    width: 150px;
+    height: 100px;
+}
+
+.width_auto img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.width_auto a {
+    display: block;
+    height: 100%;
+}
+
+.height_auto a {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+
+.user-info {
+    float: right;
+}
+
+/*login*/
+.unlogin {
+    height: 100px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: right;
+    line-height: 100px;
+    float: left;
+}
+
+.unlogin a {
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.unlogin a:hover {
+    text-decoration: none;
+}
+
+.logined {
+    height: 60px;
+    padding: 20px 0;
+    float: left;
+}
+
+.login_user {
+    float: left;
+    width: 226px;
+    margin-right: 20px;
+}
+
+.user_icon {
+    float: left;
+    width: 57px;
+    height: 57px;
+    border: 2px solid #363535;
+    background-size: cover;
+}
+
+.user_infor {
+    float: right;
+    width: 155px;
+    padding-left: 10px;
+    padding-top: 6px;
+    font-family: 'Teko';
+}
+
+.user_text {
+    color: #ffffff;
+    font-size: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 24px;
+}
+
+.user_text em {
+    color: #f2a900;
+}
+
+.user_text span {
+    color: #ffffff;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.logined a {
+    float: right;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 61px;
+    text-decoration: underline;
+    font-family: 'Teko';
+}
+
+.logined a:hover {
+    text-decoration: none;
+}
+
+/*lang*/
+
+.lang_box {
+    width: 135px;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+    position: relative;
+    border-left: 1px solid rgba(255, 255, 255, .4);
+    float: right;
+    margin: 40px 0px 0px 20px;
+}
+
+.lang_drop {
+    width: 114px;
+    height: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.lang_arrow {
+    display: block;
+    width: 10px;
+    height: 8px;
+    background: url(../images/lang_icon.png) no-repeat 0 -34px;
+    position: absolute;
+    top: 8px;
+    right: 3px;
+}
+
+.lang_on {
+    width: 102px;
+    height: 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.lang_on i {
+    /* display: inline-block; */
+    width: 25px;
+    height: 14px;
+    background: url(../images/lang_icon.png) no-repeat 0 0;
+    float: left;
+    margin-top: 3px;
+}
+
+.lang_on em {
+    display: inline-block;
+    min-width: 76px;
+    text-align: center;
+}
+
+.lang_list {
+    display: none;
+    width: 126px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-bottom: 5px solid #ffb400;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    z-index: 10;
+}
+
+.lang_list li {
+    height: 32px;
+    color: #b9b9b9;
+    font-size: 14px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid #333737;
+    cursor: pointer;
+}
+
+.lang_list li:hover {
+    color: #ffb400;
+}
+
+.lang_list li:last-child {
+    border-bottom: none;
+}
+
+.lang_list li i {
+    display: inline-block;
+    width: 25px;
+    height: 14px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url(../images/lang_icon.png) no-repeat;
+    background-position: 0 0;
+}
+
+.lang_list li:nth-child(1) i {
+    background-position: 0 0;
+}
+
+.lang_list li:nth-child(2) i {
+    background-position: 0 -17px;
+}
+
+.indonesia-wrap .user-info,
+.user-login {
+    float: left;
+}
+
+.indonesia-wrap .logo {
+    float: right;
+}
+.logo:nth-child(1) {
+    margin-right: 35px;
+}
+.indonesia-wrap .logo:nth-child(1) {
+    margin-left: 35px;
+    margin-right: 0px;
+}
+
+.indonesia-wrap .midasbuy_logo {
+    float: right;
+}
+
+.indonesia-wrap .lang_box {
+    float: left;
+    margin-right: 20px;
+}
+
+.indonesia-wrap .user_icon {
+    float: right;
+}
+
+.indonesia-wrap .banner-text {
+    width: 654px;
+    background: url(../images/banner-text2.png) no-repeat;
+    background-size: 100%;
+}
+
+.indonesia-wrap .user_infor {
+    padding: 2px 10px 0px 0px;
+    text-align: right
+}
+
+.indonesia-wrap .price_num {
+    text-align: right;
+    font-size: 18px;
+}
+
+.indonesia-wrap .price_num span {
+    float: right;
+    font-size: 24px;
+}
+
+.indonesia-wrap .bar_line span {
+    right: 0;
+    left: auto;
+}
+
+.indonesia-wrap .rule_text {
+    text-align: right;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.indonesia-wrap .footer .pubg_logo {
+    margin: 24px 0px 24px 30px;
+    float: right;
+    opacity: 0.8;
+}
+
+.indonesia-wrap .footer .copy_text {
+    text-align: right;
+    float: right;
+    color: #ffffff;
+}
+
+.header .max-content,
+.footer .max-content {
+    display: table;
+    max-width: 906px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* button */
+.button {
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    min-height: 30px;
+    min-width: 80px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.button.button_arab {
+    font-size: 14px;
+}
+
+.button:hover,
+.button:active {
+    opacity: 0.85;
+}
+
+.button span {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 90%;
+    text-align: center;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+
+/* footer */
+.footer {
+    /* background: url(../images/footer.jpg) #000000 no-repeat;
+	background-position: center top !important;
+	background-size: 100%; */
+    background: rgba(0, 0, 0, .4);
+    color: #b1997f;
+    display: table;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.footer .max-content {
+    max-width: 906px;
+}
+
+.footer .pubg_logo {
+    float: left;
+    margin: 24px 30px 24px 0px;
+}
+
+.copy_text {
+    font-size: 12px;
+    line-height: 26px;
+    padding-top: 34px;
+    float: left;
+}
+
+/*content*/
+
+.content {
+    /* max-width: 1920px; */
+    margin: 0 auto;
+}
+
+.max-content {
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        background: rgba(0, 0, 0, .4);
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: auto;
+        display: table;
+        width: 100%;
+    }
+
+    /* .pubg_logo{
+		width: 81px;
+		height: 59px;
+		margin: 20px 25px 0px 0px;
+	}
+	.midasbuy_logo{
+		width: 157px;
+		height: 37px;
+		margin-top: 30px;
+    }
+    .indonesia-wrap .pubg_logo{
+        margin-left:25px;
+        margin-right:0px;
+        margin-top:20px;
+    } */
+    /* .copy_text{
+        padding-top: 42px;
+    } */
+}
+
+@media screen and (max-width: 1023px) {
+
+    /* header */
+    /* .logo:nth-child(1) {
+        margin-right: 2%;
+    }
+
+    .indonesia-wrap .logo:nth-child(1) {
+        margin-left: 2%;
+    } */
+
+    .height_auto {
+        height: 56px;
+        width: 100px;
+    }
+
+    .width_auto {
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    .indonesia-wrap .user-logined {
+        float: right;
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+    }
+
+    .header .max-content,
+    .indonesia-wrap .header .max-content {
+        display: table;
+        width: 100%;
+        max-width: 920px;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    .pubg_logo {
+        width: 35px;
+        height: 26px;
+        margin: 16px 10px 0px 0px;
+    }
+
+    .copy_text {
+        padding-top: 20px;
+        line-height: 18px;
+    }
+
+    .footer .pubg_logo {
+        margin-right: 15px;
+    }
+
+    .indonesia-wrap .footer .pubg_logo {
+        margin-left: 15px;
+    }
+
+    .midasbuy_logo {
+        width: 77px;
+        height: 18px;
+        margin-top: 21px;
+    }
+
+    .logined {
+        padding: 15px 0px 10px 0px;
+        height: auto;
+    }
+
+    .lang_box,
+    .indonesia-wrap .lang_box {
+        width: auto;
+        margin: 20px 0px 0px 5px;
+    }
+
+    .lang_on {
+        font-size: 12px;
+        width: auto;
+    }
+
+    .lang_drop {
+        width: auto;
+        padding-left: 5px;
+    }
+
+    .logined a {
+        line-height: 30px;
+        /* font-size: 16px; */
+        font-size: 20px;
+    }
+
+    .indonesia-wrap .logined a {
+        font-size: 12px;
+    }
+
+    .indonesia-wrap .user_infor {
+        padding-right: 5px;
+        padding-top: 0px;
+    }
+
+    .lang_on i {
+        width: 20px;
+        height: 12px;
+    }
+
+    .user_infor {
+        width: auto;
+        padding-top: 1px;
+    }
+
+    .lang_arrow {
+        right: 0;
+    }
+
+    .lang_list {
+        top: 36px;
+    }
+
+    .indonesia-wrap .lang_list {
+        top: 35px;
+    }
+
+    .lang_on em {
+        min-width: 40px;
+        padding: 0 10px 0 3px;
+        font-size: 14px;
+    }
+
+    .lang_arrow {
+        transform: scale(.8);
+        -o-transform: scale(.8);
+        -ms-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+
+    .indonesia-wrap .lang_on em {
+        font-size: 14px;
+    }
+
+    .login_user {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .indonesia-wrap .login_user {
+        margin-right: 0px;
+    }
+
+    .user_icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .user_text {
+        font-size: 20px;
+        /* line-height: 14px; */
+        line-height: 1;
+    }
+
+    .user_text span {
+        /* font-size: 14px; */
+    }
+
+    .max-content {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .indonesia-wrap .lang_box {
+        margin-right: 5px;
+        margin-left: 5px;
+        /* width: 125px; */
+    }
+
+    .indonesia-wrap .lang_drop {
+        padding-left: 5px;
+        margin-right: 0px;
+    }
+
+    .indonesia-wrap .logined a {
+        font-size: 16px;
+    }
+
+    .indonesia-wrap .pubg_logo {
+        margin-left: 15px;
+    }
+
+    .indonesia-wrap .login_user {
+        margin-right: 0px;
+    }
+
+    .indonesia-wrap .header .max-content {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .logo_wrap {
+        display: table;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .logo,
+    .logo:nth-child(1),
+    .indonesia-wrap .logo,
+    .indonesia-wrap .logo:nth-child(1) {
+        display: inline-block;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo::after {
+        content: "";
+        clear: both;
+        display: inline-block;
+    }
+
+    /* button */
+    .button:hover {
+        opacity: 1;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+
+    .button_arab {
+        font-size: 10px;
+    }
+
+    /* header */
+    .user-info,
+    .indonesia-wrap .user-info {
+        width: 100%;
+    }
+
+    .noLogin.user-info,
+    .indonesia-wrap .noLogin.user-info {
+        width: auto;
+        padding-top: 2px;
+    }
+
+    .width_auto {
+        margin-top: 12px;
+    }
+
+    .height_auto {
+        height: 60px;
+    }
+
+    /* footer */
+    .footer .max-content {
+        padding: 0 10px;
+    }
+
+    /* .footer .pubg_logo {
+        margin: 40px 20px 40px 0px;
+    } */
+    .footer .max-content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .float-right {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .indonesia-wrap .user_infor {
+        width: 170px;
+    }
+
+    .indonesia-wrap .lang_box {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+
+    .user_infor {
+        /* width: 150px; */
+        width: 240px;
+    }
+
+    .indonesia-wrap .user_infor {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .indonesia-wrap .user-info {
+        width: 100%;
+    }
+
+    .indonesia-wrap .user_infor {
+        width: 150px;
+    }
+
+    .copy_text,
+    .indonesia-wrap .footer .copy_text {
+        padding-top: 0px;
+        text-align: center;
+        margin: 0px auto 30px;
+        float: none;
+        font-size: 10px;
+        line-height: 22px;
+    }
+
+    .indonesia-wrap .footer .pubg_logo {
+        margin: 20px auto 15px;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 454px) {
+
+    .pubg_logo,
+    .indonesia-wrap .pubg_logo {
+        width: 30px;
+        height: 22px;
+        margin-top: 16px;
+    }
+
+    .indonesia-wrap .pubg_logo {
+        margin-left: 5px;
+    }
+
+    .midasbuy_logo {
+        width: 65px;
+        height: 16px;
+        margin-top: 18px;
+    }
+
+    .footer .pubg_logo {
+        margin: 20px auto 15px;
+        float: none;
+    }
+
+    .copy_text {
+        padding-top: 0px;
+        text-align: center;
+        margin: 0px auto 30px;
+        float: none;
+        font-size: 10px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .pop-wrap .button {
+        height: 32px;
+    }
+
+    /* .lang_on i{
+        margin-top: 5px;
+    } */
+    .user_infor {
+        width: 150px;
+        /* width: 130px; */
+    }
+
+    .indonesia-wrap .user_infor {
+        width: 130px;
+    }
+
+    .lang_on em,
+    .indonesia-wrap .lang_on em {
+        font-size: 10px;
+    }
+
+    .user_text,
+    .logined a {
+        /* font-size: 12px; */
+        font-size: 16px;
+    }
+
+    /* .user_text{
+        line-height: 14px;
+    } */
+    .user_text span,
+    .indonesia-wrap .logined a {
+        /* font-size: 8px; */
+        font-size: 12px;
+    }
+
+    .login_user,
+    .pubg_logo {
+        margin-right: 5px;
+    }
+
+    .login_user,
+    .pubg_logo {
+        margin-right: 5px;
+    }
+
+    /* header */
+    .width_auto {
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .height_auto {
+        height: 50px;
+    }
+
+    .logined {
+        padding-top: 5px;
+    }
+
+    .indonesia-wrap .lang_box,
+    .lang_box {
+        margin-top: 10px;
+    }
+
+    .noLogin.user-info,
+    .indonesia-wrap .noLogin.user-info {
+        padding-top: 7px
+    }
+}
+
+/* add banner */
+.content {
+    position: relative;
+    z-index: 2;
+}
+.banner {
+    width: 100%;
+}
+.banner_pc {
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
+.banner_pc_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner_pc .lazy_pc {
+    width: 960px;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    left: 50%;
+    bottom: 0;
+    margin-left: -430px;
+}
+.banner_pc_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.banner_mobile {
+    display: none;
+}
+
+img {
+    border: none;
+    display: block;
+    width: 100%;
+}
+.facebook-share {
+    background: url(../images/fb_bg_noword.png) no-repeat;
+    background-size: 100% 100%;
+    width: 232px;
+    height: 42px;
+    position: absolute;
+    right: 20px;
+    top: 116px;
+    box-shadow: 4px 0px 20px rgba(0, 0, 0, .15);
+    transform: scale(.76);
+    transform-origin: right top;
+    z-index: 99;
+}
+.header .max-content {
+    display: table;
+    max-width: 1240px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.max-content {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.user-info {
+    float: right;
+}
+.width_auto img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+.footer {
+    background: #0d1011;
+    color: #b1997f;
+    display: table;
+    width: 100%;
+}
+/* add share */
+@media screen and (max-width: 1023px) {
+    .facebook-share {
+        top: 76px;
+        right: 10px;
+    }
+    .header .max-content, .indonesia-wrap .header .max-content {
+        display: table;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    .max-content {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .facebook-share {
+        /* top: 110px; */
+        transform: scale(.7);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .facebook-share {
+        top: 145px;
+        right: 0px;
+    transform: scale(.85);
+    }
+    .banner .lazy_moblile {
+        width: 100%;
+        left: 0%;
+    }
+    .banner_mobile {
+        text-align: center;
+        display: block;
+        /* margin-top: -56px; */
+        position: relative;
+    }
+    .lazy_moblile_bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .banner_pc{
+        display: none;
+    }
+    .user-info, .indonesia-wrap .user-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .facebook-share {
+        transform: scale(.75);
+    }
+}
+@media screen and (max-width: 495px) {
+    .facebook-share {
+        transform: scale(.65);
+    }
+}
+@media screen and (max-width: 430px) {
+    .facebook-share {
+        top: 105px;
+        transform: scale(.55);
+    }
+}
+
+
+
+
+@media screen and (max-width: 414px) {
+    /* .indonesia-wrap .user-info {
+        width: auto;
+    } */
+
+    .indonesia-wrap .user_infor {
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .facebook-share {
+        top: 105px;
+        transform: scale(.5);
+    }
+}
+
+@media screen and (max-width: 374px) {
+
+    .user-info,
+    .indonesia-wrap .user-info {
+        width: 100%;
+    }
+
+    .noLogin.user-info {
+        width: auto;
+    }
+
+    .user_infor {
+        /* width: 90px; */
+        width: 130px;
+    }
+
+    .indonesia-wrap .user_infor {
+        width: 90px;
+    }
+    .facebook-share {
+        top: 103px;
+        transform: scale(.5);
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .indonesia-wrap .user_infor {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .logined a,
+    .lang_on em,
+    .indonesia-wrap .lang_on em,
+    .indonesia-wrap .logined a {
+        font-size: 12px;
+    }
+
+    .copy_text,
+    .indonesia-wrap .footer .copy_text {
+        font-size: 8px;
+    }
+    .facebook-share, .indonesia-wrap .facebook-share {
+        transform: scale(.4);
+    }
+}

@@ -1,0 +1,297 @@
+/*
+* @Author: Administrator
+* @Date:   2019-05-16 20:44:34
+* @Last Modified by:   Administrator
+* @Last Modified time: 2019-05-23 20:00:01
+*/
+body{
+	margin: 0;
+	padding:0;
+	background-color: #fbfbfb;
+}
+.top{
+	height: 55px;
+	position: relative;
+	margin: 0 auto;
+}
+.logo{
+	width: 500px;
+	height: 55px;
+
+}
+.logo img{
+	float: right;
+	left: 80px;
+	position: absolute;
+}
+.top_text{
+	font-size: 14px;
+	color: #000;
+	position: absolute;
+	right: 30px;
+	left: auto;
+	height: 55px;
+	top: 0;
+	line-height: 55px;
+}
+.top_text a{
+	color: #666;
+	margin-left: 5px;
+}
+.top_text a:hover{
+	color: red;
+}
+.dh{
+	height: 80px;
+	width: 1920px;
+	background-color: #283e79;
+	position: relative;
+	top: 0;
+	margin: 0 auto;
+}
+.logo_z{
+	position: absolute;
+	top: 20px;
+	margin:0;
+}
+.logo_z ul{
+	list-style: none;
+	float: right;
+	margin-top:0px;
+	margin-left: 80px;
+	color: #fff;
+
+}
+.logo_z ul li:last-child{
+	font-size: 10px;
+}
+.logo_z ul li:first-child{
+	font-size: 18px;
+	font-weight: bold;
+
+}
+.logo_z img{
+	position: absolute;
+	left: 30px;
+	top: 0px;
+}
+.banner{
+	max-width: 1920px;
+	min-width: 1240px;
+	position: relative;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.dg{
+	margin-top: -135px;
+	width: 100%;
+	height: 1450px;
+	background:url(../images/bg.png) center no-repeat;
+}
+.navi{
+	position: absolute;
+	left: 350px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	z-index: 1;
+}
+.navi ul{
+	margin: 0px;
+	list-style: none;
+}
+.navi ul li{
+	float: left;
+	margin-left: 10px;
+	margin-left: 50px;
+}
+.navi ul li a{
+	color: #fff;
+		z-index: 1;
+
+	text-decoration: none;
+}
+.box{
+	background-color: orange;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	margin-left: 75px;
+	margin-top: 14px;
+}
+.logo_b{
+	width: 239px;
+	height: 126px;
+	position: absolute;
+	top: 100px;
+	left: 0px
+}
+.bar_conten{
+	position: relative;
+	width: 1180px;
+	height: 1000px;
+	margin: 0 auto;
+	top: 75px;
+}
+.char{
+	height: 1350px;
+	position: relative;
+	left: 300px;
+	top: 200px
+}
+.char1{
+	background:url(../images/女1.png) no-repeat center;
+	width: 1002px;
+	height: 865px;
+	float: left;
+	position: absolute;
+	top: -120px;
+	left: 160px
+}
+.char2{
+	background:url(../images/女2.png) no-repeat center;
+	width: 504px;
+	height: 410px;
+	float: left;
+	position: absolute;
+	top: 0;
+	
+}
+.char3{
+	background:url(../images/男.png) no-repeat center;
+	width: 661px;
+	height: 469px;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 400px
+}
+.wz{
+	position: absolute;
+	top: 250px;
+	left: -48px;
+}
+.conten{
+	position: absolute;
+	top: 635px;
+	width: 100%;
+	height: 215px;
+}
+.bn{
+	float: left;
+}
+.wenan{
+	float: right;
+	background-color: #fff;
+	height: 215px;
+	width: 590px;
+	position: relative;
+}
+.wenan .qdao{
+	position: absolute;
+	float: right;
+	bottom: -14px;
+	right: -26px;
+}
+#v3{
+	position: absolute;
+	width: 90%;
+	margin: 0 auto;
+	height: 45px;
+	left: 35px;
+	padding-bottom:10px; 
+}
+#v3 ul{
+	font-size: 14px;
+	list-style: none;
+}
+#v3 ul li{
+	float: left;
+	margin-right: 80px;
+	color:#969696;
+	margin-top: 0px;
+	cursor: pointer;
+
+}
+#v3 #minicon{
+	float: right;
+}
+#hrc{
+	width: 100%;
+	background-color: #969696;
+	height: 3px;
+	border-radius: 100px;
+	position: absolute;
+	bottom: 0;
+}
+#hrd{
+	width: 100px;
+	background-color: yellow;
+	height: 3px;
+	position: absolute;
+
+}
+.text_conten{
+	position: relative;
+	width: 100%;
+	top: 60px;
+	font-size: 14px;
+  -webkit-transform: scale(0.9);
+}
+.text ul{
+	list-style: none;
+		position: absolute;
+	left: -20px;
+	top: -10px;
+}
+.text {
+	width: 100%;
+	height: 170px;
+}
+.text li{
+	margin-bottom: 10px; 
+	color: #969696;
+
+}
+.text_conten ul li a{
+	float: left;
+	margin-right:100px;
+	color: #464646;
+}
+.text_conten ul li a:hover{
+	color: red;
+}
+#md{
+	height:350px; 
+	width:1181px;
+	position: absolute;
+	top: 900px;
+}
+#md div{
+	position: absolute;
+	top: 0;
+	display: none;
+	cursor: pointer;
+}
+.block{
+	display: block;
+}
+.gz{
+	position: absolute;
+	margin-left: 1020px;
+	top: 22px;
+	width: 200px;
+	height: 50px;
+}
+.gztx{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: -20px;
+	color: #f1f1f3;
+	left: 40px
+}
+.gztx ul{
+	list-style: none;
+	float: left;
+}
